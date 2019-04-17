@@ -1,0 +1,27 @@
+[Language]
+Language = 4
+
+[Com Setup]
+Com port     = 9
+Modbus Mode  = ASCII
+Baud Rate    = 9600
+Dtatabits    = 7
+Parity Check = N
+Stopbits     = 1
+
+[Trend Form]
+
+[Parameter Form]
+
+[QuickSetup Form]
+Drive    = VFD-MS300
+Version  = 1.05
+kW(Hp)   =  5  HP
+Rated_V  = 460V
+Rated_A  =   9.00A
+Step1    = 0|0|0.1|0|100|60|4
+Step2    = |||||||||||||
+Step3    = -1,-1,-1
+Step4Out = 1,8,1,8,1,8,1,8
+Step4In  = 1,6,7,8,10,9,10,9
+
