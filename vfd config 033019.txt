@@ -1,0 +1,1020 @@
+VFD-MS300|1.05|  9.00A|460V| 5  HP|32|15|50|70|83|74|69|75|93|76|29|92|53|42|0|99|83|
+Check    |Pr. No   |MODBUS   |Description     |Unit     |Data     |Default  |Min      |Max      |Attribute|Address  |Dot      |Attribute|
+X        |*****    |*****    |0 - SYSTEM PARAMETER|*****    |*****    |*****    |*****    |*****    |*****    |*****    |*****    |         |
+X        |00-00    |0000H    |Identity Code    |####     |407      |0        |0        |65535    |Read-Only|0000     |0        |25609    |
+X        |00-01    |0001H    |Rated Current    |Amps     |9.00     |0.00     |0.00     |655.35   |Read-Only|0001     |2        |16921    |
+X        |00-02    |0002H    |Parameter Reset  |####     |0        |0        |0        |10       |Writable |0002     |0        |24593    |
+X        |00-03    |0003H    |Start up Display |####     |0        |0        |0        |3        |Writable |0003     |0        |8210     |
+X        |00-04    |0004H    |User Display     |####     |3        |3        |0        |49       |Writable |0004     |0        |8211     |
+X        |00-05    |0005H    |H page scale     |####     |0.00     |0.00     |0.00     |160.00   |Writable |0005     |2        |530      |
+X        |00-06    |0006H    |Firmware Version |####     |1.05     |1.05     |0.00     |655.35   |Read-Only|0006     |2        |16920    |
+X        |00-07    |0007H    |Password Decoder |####     |0        |0        |0        |65535    |Writable |0007     |0        |2        |
+X        |00-08    |0008H    |Password Input   |####     |0        |0        |0        |65535    |Writable |0008     |0        |2        |
+X        |00-09    |0009H    |Reserved         |####     |0000H    |0000H    |0000H    |FFFFH    |Read-Only|0009     |0        |1114     |
+X        |00-10    |000AH    |Control Method   |####     |0        |0        |0        |2        |Writable |000A     |0        |8208     |
+X        |00-11    |000BH    |Velocity Mode    |####     |0        |0        |0        |6        |Writable |000B     |0        |8208     |
+X        |00-12    |000CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|000C     |0        |32776    |
+X        |00-13    |000DH    |Reserved         |####     |0        |0        |0        |0        |Read-Only|000D     |0        |32776    |
+X        |00-14    |000EH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|000E     |0        |32776    |
+X        |00-15    |000FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|000F     |0        |32776    |
+X        |00-16    |0010H    |Duty Selection   |####     |1        |1        |0        |1        |Writable |0010     |0        |8208     |
+X        |00-17    |0011H    |Carry Frequency  |KHz      |4        |4        |2        |15       |Writable |0011     |0        |17       |
+X        |00-18    |0012H    |Phase identify   |####     |0        |0        |0        |1        |Read-Only|0012     |0        |25609    |
+X        |00-19    |0013H    |PLC CMD Mask     |####     |0000H    |0000H    |0000H    |FFFFH    |Read-Only|0013     |0        |16472    |
+X        |00-20    |0014H    |Source of FREQ   |####     |7        |0        |0        |8        |Writable |0014     |0        |8210     |
+X        |00-21    |0015H    |Source of OPER   |####     |0        |0        |0        |5        |Writable |0015     |0        |8210     |
+X        |00-22    |0016H    |Stop Methods     |####     |0        |0        |0        |1        |Writable |0016     |0        |8210     |
+X        |00-23    |0017H    |Motor Direction  |####     |0        |0        |0        |2        |Writable |0017     |0        |8210     |
+X        |00-24    |0018H    |Keypad FREQ      |Hz       |60.00    |60.00    |0.00     |599.00   |Read-Only|0018     |2        |1561     |
+X        |00-25    |0019H    |User COEFF ATT   |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |0019     |0        |82       |
+X        |00-26    |001AH    |User COEFF MAX   |####     |0        |0        |0        |65535    |Writable |001A     |0        |16       |
+X        |00-27    |001BH    |User COEFF SET   |####     |0        |0        |0        |0        |Read-Only|001B     |0        |27       |
+X        |00-28    |001CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|001C     |0        |32776    |
+X        |00-29    |001DH    |LOC/REM SEL      |####     |0        |0        |0        |4        |Writable |001D     |0        |8208     |
+X        |00-30    |001EH    |Hand FREQ Source |####     |0        |0        |0        |8        |Writable |001E     |0        |8210     |
+X        |00-31    |001FH    |Hand OPER Source |####     |0        |0        |0        |5        |Writable |001F     |0        |8210     |
+X        |00-32    |0020H    |KPD STOP ENABLE  |####     |0        |0        |0        |1        |Writable |0020     |0        |8210     |
+X        |00-33    |0021H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0021     |0        |32776    |
+X        |00-34    |0022H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0022     |0        |32776    |
+X        |00-35    |0023H    |AUX FREQ Source  |####     |0        |0        |0        |8        |Writable |0023     |0        |9232     |
+X        |00-36    |0024H    |AUX FREQ FUN SEL |####     |0        |0        |0        |2        |Writable |0024     |0        |9232     |
+X        |00-37    |0025H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0025     |0        |32776    |
+X        |00-38    |0026H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0026     |0        |32776    |
+X        |00-39    |0027H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0027     |0        |32776    |
+X        |00-40    |0028H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0028     |0        |32776    |
+X        |00-41    |0029H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0029     |0        |32776    |
+X        |00-42    |002AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|002A     |0        |32776    |
+X        |00-43    |002BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|002B     |0        |32776    |
+X        |00-44    |002CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|002C     |0        |32776    |
+X        |00-45    |002DH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|002D     |0        |32776    |
+X        |00-46    |002EH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|002E     |0        |32776    |
+X        |00-47    |002FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|002F     |0        |32776    |
+X        |00-48    |0030H    |LPF of AMPS Disp |sec      |0.100    |0.100    |0.001    |65.535   |Writable |0030     |3        |786      |
+X        |00-49    |0031H    |LPF of Display   |sec      |0.100    |0.100    |0.001    |65.535   |Writable |0031     |3        |786      |
+X        |00-50    |0032H    |Date Code        |####     |17063    |17063    |0        |65535    |Read-Only|0032     |0        |16408    |
+X        |*****    |*****    |1 - BASIC PARAMETER|*****    |*****    |*****    |*****    |*****    |*****    |*****    |*****    |         |
+X        |01-00    |0100H    |MAX Output FREQ  |Hz       |400.00   |60.00    |0.00     |599.00   |Writable |0100     |2        |1553     |
+X        |01-01    |0101H    |Motor1 Fbase     |Hz       |300.00   |60.00    |0.00     |599.00   |Writable |0101     |2        |1557     |
+X        |01-02    |0102H    |MAX Out-VOLT 1   |V        |460.0    |440.0    |0.0      |510.0    |Writable |0102     |1        |277      |
+X        |01-03    |0103H    |MID Out-FREQ 1-1 |Hz       |3.00     |3.00     |0.00     |599.00   |Writable |0103     |2        |1553     |
+X        |01-04    |0104H    |MID Out-VOLT 1-1 |V        |22.0     |22.0     |0.0      |480.0    |Writable |0104     |1        |275      |
+X        |01-05    |0105H    |MID Out-FREQ 1-2 |Hz       |0.50     |0.50     |0.00     |599.00   |Writable |0105     |2        |1553     |
+X        |01-06    |0106H    |MID Out-VOLT 1-2 |V        |4.0      |4.0      |0.0      |480.0    |Writable |0106     |1        |275      |
+X        |01-07    |0107H    |MIN Out-FREQ 1   |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |0107     |2        |1553     |
+X        |01-08    |0108H    |MIN Out-VOLT 1   |V        |0.0      |0.0      |0.0      |480.0    |Writable |0108     |1        |275      |
+X        |01-09    |0109H    |Start Frequency  |Hz       |0.50     |0.50     |0.00     |599.00   |Writable |0109     |2        |1553     |
+X        |01-10    |010AH    |Upper Bound FREQ |Hz       |599.00   |599.00   |0.00     |599.00   |Writable |010A     |2        |1555     |
+X        |01-11    |010BH    |Lower Bound FREQ |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |010B     |2        |1555     |
+X        |01-12    |010CH    |1st ACC Time     |sec      |2.00     |10.00    |0.00     |600.00   |Writable |010C     |2        |1555     |
+X        |01-13    |010DH    |1st DEC Time     |sec      |10.00    |10.00    |0.00     |600.00   |Writable |010D     |2        |1555     |
+X        |01-14    |010EH    |2nd ACC Time     |sec      |10.00    |10.00    |0.00     |600.00   |Writable |010E     |2        |1555     |
+X        |01-15    |010FH    |2nd DEC Time     |sec      |10.00    |10.00    |0.00     |600.00   |Writable |010F     |2        |1555     |
+X        |01-16    |0110H    |3rd ACC Time     |sec      |10.00    |10.00    |0.00     |600.00   |Writable |0110     |2        |1555     |
+X        |01-17    |0111H    |3rd DEC Time     |sec      |10.00    |10.00    |0.00     |600.00   |Writable |0111     |2        |1555     |
+X        |01-18    |0112H    |4th ACC Time     |sec      |10.00    |10.00    |0.00     |600.00   |Writable |0112     |2        |1555     |
+X        |01-19    |0113H    |4th DEC Time     |sec      |10.00    |10.00    |0.00     |600.00   |Writable |0113     |2        |1555     |
+X        |01-20    |0114H    |JOG ACC Time     |sec      |10.00    |10.00    |0.00     |600.00   |Writable |0114     |2        |1555     |
+X        |01-21    |0115H    |JOG DEC Time     |sec      |10.00    |10.00    |0.00     |600.00   |Writable |0115     |2        |1555     |
+X        |01-22    |0116H    |JOG Frequency    |Hz       |6.00     |6.00     |0.00     |599.00   |Writable |0116     |2        |1555     |
+X        |01-23    |0117H    |TRANS ACC/DEC1-4 |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |0117     |2        |1555     |
+X        |01-24    |0118H    |S Curve Time 1   |sec      |0.20     |0.20     |0.00     |25.00    |Writable |0118     |2        |1555     |
+X        |01-25    |0119H    |S Curve Time 2   |sec      |0.20     |0.20     |0.00     |25.00    |Writable |0119     |2        |1555     |
+X        |01-26    |011AH    |S Curve Time 3   |sec      |0.20     |0.20     |0.00     |25.00    |Writable |011A     |2        |1555     |
+X        |01-27    |011BH    |S Curve Time 4   |sec      |0.20     |0.20     |0.00     |25.00    |Writable |011B     |2        |1555     |
+X        |01-28    |011CH    |Skip FREQ  1Up   |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |011C     |2        |1553     |
+X        |01-29    |011DH    |Skip FREQ  1Low  |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |011D     |2        |1553     |
+X        |01-30    |011EH    |Skip FREQ  2Up   |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |011E     |2        |1553     |
+X        |01-31    |011FH    |Skip FREQ  2Low  |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |011F     |2        |1553     |
+X        |01-32    |0120H    |Skip FREQ  3Up   |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |0120     |2        |1553     |
+X        |01-33    |0121H    |Skip FREQ  3Low  |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |0121     |2        |1553     |
+X        |01-34    |0122H    |Select Zero SPD  |####     |0        |0        |0        |2        |Writable |0122     |0        |8208     |
+X        |01-35    |0123H    |Motor2 Fbase     |Hz       |60.00    |60.00    |0.00     |599.00   |Writable |0123     |2        |1557     |
+X        |01-36    |0124H    |Max Out-VOLT 2   |V        |440.0    |440.0    |0.0      |510.0    |Writable |0124     |1        |277      |
+X        |01-37    |0125H    |Mid Out-FREQ 2-1 |Hz       |3.00     |3.00     |0.00     |599.00   |Writable |0125     |2        |1553     |
+X        |01-38    |0126H    |Mid Out-VOLT 2-1 |V        |22.0     |22.0     |0.0      |480.0    |Writable |0126     |1        |275      |
+X        |01-39    |0127H    |Mid Out-FREQ 2-2 |Hz       |0.50     |0.50     |0.00     |599.00   |Writable |0127     |2        |1553     |
+X        |01-40    |0128H    |Mid Out-VOLT 2-2 |V        |4.0      |4.0      |0.0      |480.0    |Writable |0128     |1        |275      |
+X        |01-41    |0129H    |Min Out-FREQ 2   |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |0129     |2        |1553     |
+X        |01-42    |012AH    |Min Out-VOLT 2   |V        |0.0      |0.0      |0.0      |480.0    |Writable |012A     |1        |275      |
+X        |01-43    |012BH    |VF Curve Mode    |####     |0        |0        |0        |2        |Writable |012B     |0        |8208     |
+X        |01-44    |012CH    |Auto ACC/DEC     |####     |0        |0        |0        |4        |Writable |012C     |0        |8210     |
+X        |01-45    |012DH    |ACC/DEC TimeUnit |####     |0        |0        |0        |1        |Writable |012D     |0        |8208     |
+X        |01-46    |012EH    |Quick Stop Time  |sec      |1.00     |1.00     |0.00     |600.00   |Writable |012E     |2        |1555     |
+X        |01-47    |012FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|012F     |0        |32776    |
+X        |01-48    |0130H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0130     |0        |32776    |
+X        |01-49    |0131H    |Decel Method     |####     |0        |0        |0        |2        |Writable |0131     |0        |16       |
+X        |01-50    |0132H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0132     |0        |32776    |
+X        |01-51    |0133H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0133     |0        |32776    |
+X        |01-52    |0134H    |MAX Output FREQ2 |Hz       |60.00    |60.00    |0.00     |599.00   |Writable |0134     |2        |1553     |
+X        |01-53    |0135H    |MAX Output FREQ3 |Hz       |60.00    |60.00    |0.00     |599.00   |Writable |0135     |2        |1553     |
+X        |01-54    |0136H    |Motor3 Fbase     |Hz       |60.00    |60.00    |0.00     |599.00   |Writable |0136     |2        |1557     |
+X        |01-55    |0137H    |Max Out-VOLT 3   |V        |440.0    |440.0    |0.0      |510.0    |Writable |0137     |1        |277      |
+X        |01-56    |0138H    |Mid Out-FREQ 3-1 |Hz       |3.00     |3.00     |0.00     |599.00   |Writable |0138     |2        |1553     |
+X        |01-57    |0139H    |Mid Out-VOLT 3-1 |V        |22.0     |22.0     |0.0      |480.0    |Writable |0139     |1        |275      |
+X        |01-58    |013AH    |Mid Out-FREQ 3-2 |Hz       |0.50     |0.50     |0.00     |599.00   |Writable |013A     |2        |1553     |
+X        |01-59    |013BH    |Mid Out-VOLT 3-2 |V        |4.0      |4.0      |0.0      |480.0    |Writable |013B     |1        |275      |
+X        |01-60    |013CH    |Min Out-FREQ 3   |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |013C     |2        |1553     |
+X        |01-61    |013DH    |Min Out-VOLT 3   |V        |0.0      |0.0      |0.0      |480.0    |Writable |013D     |1        |275      |
+X        |01-62    |013EH    |MAX Output FREQ4 |Hz       |60.00    |60.00    |0.00     |599.00   |Writable |013E     |2        |1553     |
+X        |01-63    |013FH    |Motor4 Fbase     |Hz       |60.00    |60.00    |0.00     |599.00   |Writable |013F     |2        |1557     |
+X        |01-64    |0140H    |Max Out-VOLT 4   |V        |440.0    |440.0    |0.0      |510.0    |Writable |0140     |1        |277      |
+X        |01-65    |0141H    |Mid Out-FREQ 4-1 |Hz       |3.00     |3.00     |0.00     |599.00   |Writable |0141     |2        |1553     |
+X        |01-66    |0142H    |Mid Out-VOLT 4-1 |V        |22.0     |22.0     |0.0      |480.0    |Writable |0142     |1        |275      |
+X        |01-67    |0143H    |Mid Out-FREQ 4-2 |Hz       |0.50     |0.50     |0.00     |599.00   |Writable |0143     |2        |1553     |
+X        |01-68    |0144H    |Mid Out-VOLT 4-2 |V        |4.0      |4.0      |0.0      |480.0    |Writable |0144     |1        |275      |
+X        |01-69    |0145H    |Min Out-FREQ 4   |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |0145     |2        |1553     |
+X        |01-70    |0146H    |Min Out-VOLT 4   |V        |0.0      |0.0      |0.0      |480.0    |Writable |0146     |1        |275      |
+X        |*****    |*****    |2 - DIGITAL IN/OUT|*****    |*****    |*****    |*****    |*****    |*****    |*****    |*****    |         |
+X        |02-00    |0200H    |2/3 wire Control |####     |1        |1        |0        |6        |Writable |0200     |0        |8208     |
+X        |02-01    |0201H    |MULTI-FUN In 1   |####     |0        |0        |0        |84       |Writable |0201     |0        |8208     |
+X        |02-02    |0202H    |MULTI-FUN In 2   |####     |0        |0        |0        |84       |Writable |0202     |0        |8208     |
+X        |02-03    |0203H    |MULTI-FUN In 3   |####     |1        |1        |0        |84       |Writable |0203     |0        |8208     |
+X        |02-04    |0204H    |MULTI-FUN In 4   |####     |2        |2        |0        |84       |Writable |0204     |0        |8208     |
+X        |02-05    |0205H    |MULTI-FUN In 5   |####     |3        |3        |0        |84       |Writable |0205     |0        |8208     |
+X        |02-06    |0206H    |MULTI-FUN In 6   |####     |4        |4        |0        |84       |Writable |0206     |0        |8208     |
+X        |02-07    |0207H    |MULTI-FUN In 7   |####     |0        |0        |0        |84       |Writable |0207     |0        |8208     |
+X        |02-08    |0208H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0208     |0        |32776    |
+X        |02-09    |0209H    |Up/Down Key Mode |####     |0        |0        |0        |3        |Writable |0209     |0        |8210     |
+X        |02-10    |020AH    |Up/Down Key SPD  |Hzms     |0.001    |0.001    |0.001    |1.000    |Writable |020A     |3        |1811     |
+X        |02-11    |020BH    |MFI Response     |sec      |0.005    |0.005    |0.000    |30.000   |Writable |020B     |3        |786      |
+X        |02-12    |020CH    |MULTI-Input ACT  |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |020C     |0        |82       |
+X        |02-13    |020DH    |MULTI-FUN RLY1   |####     |11       |11       |0        |74       |Writable |020D     |0        |8210     |
+X        |02-14    |020EH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|020E     |0        |32776    |
+X        |02-15    |020FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|020F     |0        |32776    |
+X        |02-16    |0210H    |MULTI-FUN Out 1  |####     |0        |0        |0        |74       |Writable |0210     |0        |8210     |
+X        |02-17    |0211H    |MULTI-FUN Out 2  |####     |0        |0        |0        |74       |Writable |0211     |0        |8210     |
+X        |02-18    |0212H    |MULTI-Output ACT |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |0212     |0        |82       |
+X        |02-19    |0213H    |Final Counter    |####     |0        |0        |0        |65500    |Writable |0213     |0        |18       |
+X        |02-20    |0214H    |Middle Counter   |####     |0        |0        |0        |65500    |Writable |0214     |0        |18       |
+X        |02-21    |0215H    |DFM Gain         |####     |1        |1        |1        |55       |Writable |0215     |0        |18       |
+X        |02-22    |0216H    |Desire-FREQ1     |Hz       |60.00    |60.00    |0.00     |599.00   |Writable |0216     |2        |1555     |
+X        |02-23    |0217H    |Desire-FREQ1 BND |Hz       |2.00     |2.00     |0.00     |599.00   |Writable |0217     |2        |1555     |
+X        |02-24    |0218H    |Desire-FREQ2     |Hz       |60.00    |60.00    |0.00     |599.00   |Writable |0218     |2        |1555     |
+X        |02-25    |0219H    |Desire-FREQ2 BND |Hz       |2.00     |2.00     |0.00     |599.00   |Writable |0219     |2        |1555     |
+X        |02-26    |021AH    |MULTI-FUN In 8   |####     |0        |0        |0        |84       |Writable |021A     |0        |9233     |
+X        |02-27    |021BH    |MULTI-FUN In 9   |####     |0        |0        |0        |84       |Writable |021B     |0        |9233     |
+X        |02-28    |021CH    |MULTI-FUN In 10  |####     |0        |0        |0        |84       |Writable |021C     |0        |9233     |
+X        |02-29    |021DH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|021D     |0        |32776    |
+X        |02-30    |021EH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|021E     |0        |32776    |
+X        |02-31    |021FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|021F     |0        |32776    |
+X        |02-32    |0220H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0220     |0        |32776    |
+X        |02-33    |0221H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0221     |0        |32776    |
+X        |02-34    |0222H    |Speed Area Set   |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |0222     |2        |530      |
+X        |02-35    |0223H    |Fault Reset OP   |####     |0        |0        |0        |1        |Writable |0223     |0        |8210     |
+X        |02-36    |0224H    |MULTI-FUN Out 3  |####     |0        |0        |0        |74       |Writable |0224     |0        |9235     |
+X        |02-37    |0225H    |MULTI-FUN Out 4  |####     |0        |0        |0        |74       |Writable |0225     |0        |9235     |
+X        |02-38    |0226H    |MULTI-FUN Out 5  |####     |0        |0        |0        |74       |Writable |0226     |0        |9235     |
+X        |02-39    |0227H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0227     |0        |32776    |
+X        |02-40    |0228H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0228     |0        |32776    |
+X        |02-41    |0229H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0229     |0        |32776    |
+X        |02-42    |022AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|022A     |0        |32776    |
+X        |02-43    |022BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|022B     |0        |32776    |
+X        |02-44    |022CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|022C     |0        |32776    |
+X        |02-45    |022DH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|022D     |0        |32776    |
+X        |02-46    |022EH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|022E     |0        |32776    |
+X        |02-47    |022FH    |Desire RPM       |rpm      |0        |0        |0        |65535    |Writable |022F     |0        |18       |
+X        |02-48    |0230H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0230     |0        |32776    |
+X        |02-49    |0231H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0231     |0        |32776    |
+X        |02-50    |0232H    |MIx Status       |####     |0000H    |0000H    |0000H    |FFFFH    |Read-Only|0232     |0        |72       |
+X        |02-51    |0233H    |MOx.Status       |####     |0000H    |0000H    |0000H    |FFFFH    |Read-Only|0233     |0        |72       |
+X        |02-52    |0234H    |PLC MI1~16 Mask  |####     |0000H    |0000H    |0000H    |FFFFH    |Read-Only|0234     |0        |16472    |
+X        |02-53    |0235H    |PLC MO1~16 Mask  |####     |0000H    |0000H    |0000H    |FFFFH    |Read-Only|0235     |0        |16472    |
+X        |02-54    |0236H    |EXT Speed REC    |Hz       |60.00    |60.00    |0.00     |599.00   |Read-Only|0236     |2        |1561     |
+X        |02-55    |0237H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0237     |0        |32776    |
+X        |02-56    |0238H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0238     |0        |32776    |
+X        |02-57    |0239H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0239     |0        |32776    |
+X        |02-58    |023AH    |Braking Freq     |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |023A     |2        |531      |
+X        |02-59    |023BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|023B     |0        |32776    |
+X        |02-60    |023CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|023C     |0        |32776    |
+X        |02-61    |023DH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|023D     |0        |32776    |
+X        |02-62    |023EH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|023E     |0        |32776    |
+X        |02-63    |023FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|023F     |0        |32776    |
+X        |02-64    |0240H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0240     |0        |32776    |
+X        |02-65    |0241H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0241     |0        |32776    |
+X        |02-66    |0242H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0242     |0        |32776    |
+X        |02-67    |0243H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0243     |0        |32776    |
+X        |02-68    |0244H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0244     |0        |32776    |
+X        |02-69    |0245H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0245     |0        |32776    |
+X        |02-70    |0246H    |IO Card ID       |####     |0        |0        |0        |7        |Read-Only|0246     |0        |8216     |
+X        |02-71    |0247H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0247     |0        |32776    |
+X        |02-72    |0248H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0248     |0        |32776    |
+X        |02-73    |0249H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0249     |0        |32776    |
+X        |02-74    |024AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|024A     |0        |32776    |
+X        |02-75    |024BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|024B     |0        |32776    |
+X        |02-76    |024CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|024C     |0        |32776    |
+X        |02-77    |024DH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|024D     |0        |32776    |
+X        |02-78    |024EH    |GearRatioReducer |####     |200.0    |200.0    |4.0      |1000.0   |Writable |024E     |1        |272      |
+X        |02-79    |024FH    |Index Angle      |####     |180.0    |180.0    |0.0      |6480.0   |Writable |024F     |1        |272      |
+X        |02-80    |0250H    |Index decel.     |sec      |0.00     |0.00     |0.00     |100.00   |Writable |0250     |2        |530      |
+X        |02-81    |0251H    |Count EF Setup   |####     |0        |0        |0        |1        |Writable |0251     |0        |8210     |
+X        |02-82    |0252H    |Stop Freq. Sel.  |####     |0        |0        |0        |2        |Writable |0252     |0        |8210     |
+X        |02-83    |0253H    |Stop Freq. Init. |Hz       |60.00    |60.00    |0.00     |599.00   |Writable |0253     |2        |1554     |
+X        |*****    |*****    |3 - ANALOG IN/OUT|*****    |*****    |*****    |*****    |*****    |*****    |*****    |*****    |         |
+X        |03-00    |0300H    |AVI Selection    |####     |1        |1        |0        |13       |Writable |0300     |0        |8210     |
+X        |03-01    |0301H    |ACI Selection    |####     |0        |0        |0        |13       |Writable |0301     |0        |8210     |
+X        |03-02    |0302H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0302     |0        |32776    |
+X        |03-03    |0303H    |AVI Input Bias   |%        |0.0      |0.0      |-100.0   |100.0    |Writable |0303     |1        |402      |
+X        |03-04    |0304H    |ACI Input Bias   |%        |0.0      |0.0      |-100.0   |100.0    |Writable |0304     |1        |402      |
+X        |03-05    |0305H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0305     |0        |32776    |
+X        |03-06    |0306H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0306     |0        |32776    |
+X        |03-07    |0307H    |AVI Bias Mode    |####     |0        |0        |0        |4        |Writable |0307     |0        |8210     |
+X        |03-08    |0308H    |ACI Bias Mode    |####     |0        |0        |0        |4        |Writable |0308     |0        |8210     |
+X        |03-09    |0309H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0309     |0        |32776    |
+X        |03-10    |030AH    |AI Bias REV Mode |####     |0        |0        |0        |1        |Writable |030A     |0        |8210     |
+X        |03-11    |030BH    |AVI Input Gain   |%        |100.0    |100.0    |-500.0   |500.0    |Writable |030B     |1        |402      |
+X        |03-12    |030CH    |ACI Input Gain   |%        |100.0    |100.0    |-500.0   |500.0    |Writable |030C     |1        |402      |
+X        |03-13    |030DH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|030D     |0        |32776    |
+X        |03-14    |030EH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|030E     |0        |32776    |
+X        |03-15    |030FH    |AVI Input LPF    |sec      |0.01     |0.01     |0.00     |20.00    |Writable |030F     |2        |530      |
+X        |03-16    |0310H    |ACI Input LPF    |sec      |0.01     |0.01     |0.00     |20.00    |Writable |0310     |2        |530      |
+X        |03-17    |0311H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0311     |0        |32776    |
+X        |03-18    |0312H    |Addition of AI   |####     |0        |0        |0        |1        |Writable |0312     |0        |8210     |
+X        |03-19    |0313H    |Loss of ACI      |####     |0        |0        |0        |3        |Writable |0313     |0        |8210     |
+X        |03-20    |0314H    |AFM1 Setting     |####     |0        |0        |0        |23       |Writable |0314     |0        |8210     |
+X        |03-21    |0315H    |AFM1 Gain        |%        |100.0    |100.0    |0.0      |500.0    |Writable |0315     |1        |274      |
+X        |03-22    |0316H    |AFM1 Output Mode |####     |0        |0        |0        |2        |Writable |0316     |0        |8210     |
+X        |03-23    |0317H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0317     |0        |32776    |
+X        |03-24    |0318H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0318     |0        |32776    |
+X        |03-25    |0319H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0319     |0        |32776    |
+X        |03-26    |031AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|031A     |0        |32776    |
+X        |03-27    |031BH    |AFM Output Bias  |%        |0.00     |0.00     |-100.00  |100.00   |Writable |031B     |2        |658      |
+X        |03-28    |031CH    |AVIv/AVIi SEL    |####     |0        |0        |0        |3        |Writable |031C     |0        |8210     |
+X        |03-29    |031DH    |ACIi/ACIv SEL    |####     |0        |0        |0        |2        |Writable |031D     |0        |8210     |
+X        |03-30    |031EH    |PLC AFM1~16 Mask |####     |0000H    |0000H    |0000H    |FFFFH    |Read-Only|031E     |0        |16472    |
+X        |03-31    |031FH    |AFM output       |####     |0        |0        |0        |2        |Writable |031F     |0        |8210     |
+X        |03-32    |0320H    |AFM1 OUT-LEVEL   |%        |0.00     |0.00     |0.00     |100.00   |Writable |0320     |2        |530      |
+X        |03-33    |0321H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0321     |0        |32776    |
+X        |03-34    |0322H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0322     |0        |32776    |
+X        |03-35    |0323H    |AFM1 Output LPF  |sec      |0.01     |0.01     |0.00     |20.00    |Writable |0323     |2        |530      |
+X        |03-36    |0324H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0324     |0        |32776    |
+X        |03-37    |0325H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0325     |0        |32776    |
+X        |03-38    |0326H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0326     |0        |32776    |
+X        |03-39    |0327H    |VR Selection     |####     |1        |1        |0        |1        |Writable |0327     |0        |8210     |
+X        |03-40    |0328H    |VR Input Bias    |%        |0.0      |0.0      |-100.0   |100.0    |Writable |0328     |1        |402      |
+X        |03-41    |0329H    |VR Bias Mode     |####     |0        |0        |0        |4        |Writable |0329     |0        |8210     |
+X        |03-42    |032AH    |VR Input Gain    |%        |100.0    |100.0    |-500.0   |500.0    |Writable |032A     |1        |402      |
+X        |03-43    |032BH    |VR Input LPF     |sec      |0.01     |0.01     |0.00     |2.00     |Writable |032B     |2        |530      |
+X        |03-44    |032CH    |MO by AI level   |####     |0        |0        |0        |4        |Writable |032C     |0        |8210     |
+X        |03-45    |032DH    |AI Upper Level   |%        |50.00    |50.00    |-100.00  |100.00   |Writable |032D     |2        |658      |
+X        |03-46    |032EH    |AI Lower Level   |%        |10.00    |10.00    |-100.00  |100.00   |Writable |032E     |2        |658      |
+X        |03-47    |032FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|032F     |0        |32776    |
+X        |03-48    |0330H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0330     |0        |32776    |
+X        |03-49    |0331H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0331     |0        |32776    |
+X        |03-50    |0332H    |AI Calculate Way |####     |0        |0        |0        |7        |Writable |0332     |0        |8210     |
+X        |03-51    |0333H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0333     |0        |32776    |
+X        |03-52    |0334H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0334     |0        |32776    |
+X        |03-53    |0335H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0335     |0        |32776    |
+X        |03-54    |0336H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0336     |0        |32776    |
+X        |03-55    |0337H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0337     |0        |32776    |
+X        |03-56    |0338H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0338     |0        |32776    |
+X        |03-57    |0339H    |ACI Low Point    |####     |4.00     |4.00     |0.00     |20.00    |Writable |0339     |2        |531      |
+X        |03-58    |033AH    |ACI Low %        |%        |0.00     |0.00     |0.00     |100.00   |Writable |033A     |2        |530      |
+X        |03-59    |033BH    |ACI Middle Point |####     |12.00    |12.00    |0.00     |20.00    |Writable |033B     |2        |531      |
+X        |03-60    |033CH    |ACI Middle %     |%        |50.00    |50.00    |0.00     |100.00   |Writable |033C     |2        |530      |
+X        |03-61    |033DH    |ACI High Point   |####     |20.00    |20.00    |0.00     |20.00    |Writable |033D     |2        |531      |
+X        |03-62    |033EH    |ACI High %       |%        |100.00   |100.00   |0.00     |100.00   |Writable |033E     |2        |530      |
+X        |03-63    |033FH    |AVI Low Point    |V        |0.00     |0.00     |0.00     |10.00    |Writable |033F     |2        |530      |
+X        |03-64    |0340H    |AVI Low %        |%        |0.00     |0.00     |-100.00  |100.00   |Writable |0340     |2        |658      |
+X        |03-65    |0341H    |AVI Mid Point    |V        |5.00     |5.00     |0.00     |10.00    |Writable |0341     |2        |530      |
+X        |03-66    |0342H    |AVI Mid %        |%        |50.00    |50.00    |-100.00  |100.00   |Writable |0342     |2        |658      |
+X        |03-67    |0343H    |AVI High Point   |V        |10.00    |10.00    |0.00     |10.00    |Writable |0343     |2        |530      |
+X        |03-68    |0344H    |AVI High %       |%        |100.00   |100.00   |-100.00  |100.00   |Writable |0344     |2        |658      |
+X        |03-69    |0345H    |-AVI High Point  |V        |0.00     |0.00     |-10.00   |0.00     |Writable |0345     |2        |658      |
+X        |03-70    |0346H    |-AVI High %      |%        |0.00     |0.00     |-100.00  |100.00   |Writable |0346     |2        |658      |
+X        |03-71    |0347H    |-AVI Mid Point   |V        |-5.00    |-5.00    |-10.00   |0.00     |Writable |0347     |2        |658      |
+X        |03-72    |0348H    |-AVI Mid %       |%        |-50.00   |-50.00   |-100.00  |100.00   |Writable |0348     |2        |658      |
+X        |03-73    |0349H    |-AVI Low Point   |V        |-10.00   |-10.00   |-10.00   |0.00     |Writable |0349     |2        |658      |
+X        |03-74    |034AH    |-AVI Low %       |%        |-100.00  |-100.00  |-100.00  |100.00   |Writable |034A     |2        |658      |
+X        |*****    |*****    |4 - MULTI-SPEED  |*****    |*****    |*****    |*****    |*****    |*****    |*****    |*****    |         |
+X        |04-00    |0400H    |Multi-Speed 1    |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |0400     |2        |1555     |
+X        |04-01    |0401H    |Multi-Speed 2    |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |0401     |2        |1555     |
+X        |04-02    |0402H    |Multi-Speed 3    |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |0402     |2        |1555     |
+X        |04-03    |0403H    |Multi-Speed 4    |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |0403     |2        |1555     |
+X        |04-04    |0404H    |Multi-Speed 5    |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |0404     |2        |1555     |
+X        |04-05    |0405H    |Multi-Speed 6    |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |0405     |2        |1555     |
+X        |04-06    |0406H    |Multi-Speed 7    |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |0406     |2        |1555     |
+X        |04-07    |0407H    |Multi-Speed 8    |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |0407     |2        |1555     |
+X        |04-08    |0408H    |Multi-Speed 9    |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |0408     |2        |1555     |
+X        |04-09    |0409H    |Multi-Speed 10   |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |0409     |2        |1555     |
+X        |04-10    |040AH    |Multi-Speed 11   |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |040A     |2        |1555     |
+X        |04-11    |040BH    |Multi-Speed 12   |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |040B     |2        |1555     |
+X        |04-12    |040CH    |Multi-Speed 13   |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |040C     |2        |1555     |
+X        |04-13    |040DH    |Multi-Speed 14   |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |040D     |2        |1555     |
+X        |04-14    |040EH    |Multi-Speed 15   |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |040E     |2        |1555     |
+X        |04-15    |040FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|040F     |0        |32776    |
+X        |04-16    |0410H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0410     |0        |32776    |
+X        |04-17    |0411H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0411     |0        |32776    |
+X        |04-18    |0412H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0412     |0        |32776    |
+X        |04-19    |0413H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0413     |0        |32776    |
+X        |04-20    |0414H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0414     |0        |32776    |
+X        |04-21    |0415H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0415     |0        |32776    |
+X        |04-22    |0416H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0416     |0        |32776    |
+X        |04-23    |0417H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0417     |0        |32776    |
+X        |04-24    |0418H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0418     |0        |32776    |
+X        |04-25    |0419H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0419     |0        |32776    |
+X        |04-26    |041AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|041A     |0        |32776    |
+X        |04-27    |041BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|041B     |0        |32776    |
+X        |04-28    |041CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|041C     |0        |32776    |
+X        |04-29    |041DH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|041D     |0        |32776    |
+X        |04-30    |041EH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|041E     |0        |32776    |
+X        |04-31    |041FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|041F     |0        |32776    |
+X        |04-32    |0420H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0420     |0        |32776    |
+X        |04-33    |0421H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0421     |0        |32776    |
+X        |04-34    |0422H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0422     |0        |32776    |
+X        |04-35    |0423H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0423     |0        |32776    |
+X        |04-36    |0424H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0424     |0        |32776    |
+X        |04-37    |0425H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0425     |0        |32776    |
+X        |04-38    |0426H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0426     |0        |32776    |
+X        |04-39    |0427H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0427     |0        |32776    |
+X        |04-40    |0428H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0428     |0        |32776    |
+X        |04-41    |0429H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0429     |0        |32776    |
+X        |04-42    |042AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|042A     |0        |32776    |
+X        |04-43    |042BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|042B     |0        |32776    |
+X        |04-44    |042CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|042C     |0        |32776    |
+X        |04-45    |042DH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|042D     |0        |32776    |
+X        |04-46    |042EH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|042E     |0        |32776    |
+X        |04-47    |042FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|042F     |0        |32776    |
+X        |04-48    |0430H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0430     |0        |32776    |
+X        |04-49    |0431H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0431     |0        |32776    |
+X        |04-50    |0432H    |PLC Buffer 0     |####     |0        |0        |0        |65535    |Writable |0432     |0        |18       |
+X        |04-51    |0433H    |PLC Buffer 1     |####     |0        |0        |0        |65535    |Writable |0433     |0        |18       |
+X        |04-52    |0434H    |PLC Buffer 2     |####     |0        |0        |0        |65535    |Writable |0434     |0        |18       |
+X        |04-53    |0435H    |PLC Buffer 3     |####     |0        |0        |0        |65535    |Writable |0435     |0        |18       |
+X        |04-54    |0436H    |PLC Buffer 4     |####     |0        |0        |0        |65535    |Writable |0436     |0        |18       |
+X        |04-55    |0437H    |PLC Buffer 5     |####     |0        |0        |0        |65535    |Writable |0437     |0        |18       |
+X        |04-56    |0438H    |PLC Buffer 6     |####     |0        |0        |0        |65535    |Writable |0438     |0        |18       |
+X        |04-57    |0439H    |PLC Buffer 7     |####     |0        |0        |0        |65535    |Writable |0439     |0        |18       |
+X        |04-58    |043AH    |PLC Buffer 8     |####     |0        |0        |0        |65535    |Writable |043A     |0        |18       |
+X        |04-59    |043BH    |PLC Buffer 9     |####     |0        |0        |0        |65535    |Writable |043B     |0        |18       |
+X        |04-60    |043CH    |PLC Buffer 10    |####     |0        |0        |0        |65535    |Writable |043C     |0        |18       |
+X        |04-61    |043DH    |PLC Buffer 11    |####     |0        |0        |0        |65535    |Writable |043D     |0        |18       |
+X        |04-62    |043EH    |PLC Buffer 12    |####     |0        |0        |0        |65535    |Writable |043E     |0        |18       |
+X        |04-63    |043FH    |PLC Buffer 13    |####     |0        |0        |0        |65535    |Writable |043F     |0        |18       |
+X        |04-64    |0440H    |PLC Buffer 14    |####     |0        |0        |0        |65535    |Writable |0440     |0        |18       |
+X        |04-65    |0441H    |PLC Buffer 15    |####     |0        |0        |0        |65535    |Writable |0441     |0        |18       |
+X        |04-66    |0442H    |PLC Buffer 16    |####     |0        |0        |0        |65535    |Writable |0442     |0        |18       |
+X        |04-67    |0443H    |PLC Buffer 17    |####     |0        |0        |0        |65535    |Writable |0443     |0        |18       |
+X        |04-68    |0444H    |PLC Buffer 18    |####     |0        |0        |0        |65535    |Writable |0444     |0        |18       |
+X        |04-69    |0445H    |PLC Buffer 19    |####     |0        |0        |0        |65535    |Writable |0445     |0        |18       |
+X        |*****    |*****    |5 - MOTOR PARAMETER|*****    |*****    |*****    |*****    |*****    |*****    |*****    |*****    |         |
+X        |05-00    |0500H    |Auto-Tuning SEL  |####     |0        |0        |0        |13       |Writable |0500     |0        |8209     |
+X        |05-01    |0501H    |Motor1 Rated A   |Amps     |8.10     |8.10     |0.90     |10.80    |Writable |0501     |2        |1553     |
+X        |05-02    |0502H    |Motro1 Rated P   |Kw       |3.75     |0.00     |0.00     |655.35   |Writable |0502     |2        |530      |
+X        |05-03    |0503H    |Motor1 Rated     |rpm      |1710     |1710     |0        |65535    |Writable |0503     |0        |18       |
+X        |05-04    |0504H    |Motor1 Poles     |####     |2        |4        |2        |20       |Writable |0504     |0        |20       |
+X        |05-05    |0505H    |Motor1 No-Load   |Amps     |3.60     |0.00     |0.00     |8.10     |Writable |0505     |2        |1553     |
+X        |05-06    |0506H    |Motor1 Rs        |ohm      |3.333    |0.000    |0.000    |65.535   |Writable |0506     |3        |784      |
+X        |05-07    |0507H    |Motor1 Rr        |ohm      |0.000    |0.000    |0.000    |65.535   |Writable |0507     |3        |784      |
+X        |05-08    |0508H    |Motor1 Lm        |mH       |0.0      |0.0      |0.0      |6553.5   |Writable |0508     |1        |272      |
+X        |05-09    |0509H    |Motor1 Lx        |mH       |0.0      |0.0      |0.0      |6553.5   |Writable |0509     |1        |272      |
+X        |05-10    |050AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|050A     |0        |32776    |
+X        |05-11    |050BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|050B     |0        |32776    |
+X        |05-12    |050CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|050C     |0        |32776    |
+X        |05-13    |050DH    |Motor2 Rated A   |Amps     |8.10     |8.10     |0.90     |10.80    |Writable |050D     |2        |1553     |
+X        |05-14    |050EH    |Motor2 Rated P   |Kw       |3.75     |0.00     |0.00     |655.35   |Writable |050E     |2        |530      |
+X        |05-15    |050FH    |Motor2 Rated     |rpm      |1710     |1710     |0        |65535    |Writable |050F     |0        |18       |
+X        |05-16    |0510H    |Motor2 Poles     |####     |4        |4        |2        |20       |Writable |0510     |0        |20       |
+X        |05-17    |0511H    |Motor2 No-Load   |Amps     |3.60     |0.00     |0.00     |8.10     |Writable |0511     |2        |1553     |
+X        |05-18    |0512H    |Motor2 Rs        |ohm      |3.333    |0.000    |0.000    |65.535   |Writable |0512     |3        |784      |
+X        |05-19    |0513H    |Motor2 Rr        |ohm      |0.000    |0.000    |0.000    |65.535   |Writable |0513     |3        |784      |
+X        |05-20    |0514H    |Motor2 Lm        |mH       |0.0      |0.0      |0.0      |6553.5   |Writable |0514     |1        |272      |
+X        |05-21    |0515H    |Motor2 Lx        |mH       |0.0      |0.0      |0.0      |6553.5   |Writable |0515     |1        |272      |
+X        |05-22    |0516H    |Motor 1 Or 2     |####     |1        |1        |1        |4        |Writable |0516     |0        |8208     |
+X        |05-23    |0517H    |Y-D Switch Hz    |Hz       |60.00    |60.00    |0.00     |599.00   |Writable |0517     |2        |1555     |
+X        |05-24    |0518H    |Y-D Switch SEL   |####     |0        |0        |0        |1        |Writable |0518     |0        |8208     |
+X        |05-25    |0519H    |Y-D Switch Delay |sec      |0.200    |0.200    |0.000    |60.000   |Writable |0519     |3        |786      |
+X        |05-26    |051AH    |W-sec Low word   |Wsec     |1548.1   |0.0      |0.0      |6553.5   |Read-Only|051A     |1        |264      |
+X        |05-27    |051BH    |W-sec High word  |Wsec     |0.4      |0.0      |0.0      |6553.5   |Read-Only|051B     |1        |264      |
+X        |05-28    |051CH    |W-hrs            |Whrs     |84.4     |0.0      |0.0      |6553.5   |Read-Only|051C     |1        |264      |
+X        |05-29    |051DH    |KWh Low word     |KWh      |159.6    |0.0      |0.0      |6553.5   |Read-Only|051D     |1        |264      |
+X        |05-30    |051EH    |KWh High word    |KWh      |0.0      |0.0      |0.0      |6553.5   |Read-Only|051E     |1        |264      |
+X        |05-31    |051FH    |Accumul Run Hour |min      |36       |0        |0        |1439     |Writable |051F     |0        |16       |
+X        |05-32    |0520H    |Accumul Run day  |day      |0        |0        |0        |65535    |Writable |0520     |0        |16       |
+X        |05-33    |0521H    |IM/PM Selection  |####     |0        |0        |0        |2        |Writable |0521     |0        |8208     |
+X        |05-34    |0522H    |PM Rated Current |Amps     |8.10     |8.10     |0.00     |10.80    |Writable |0522     |2        |1553     |
+X        |05-35    |0523H    |PM Rated Power   |Kw       |3.75     |0.00     |0.00     |655.35   |Writable |0523     |2        |528      |
+X        |05-36    |0524H    |PM Rated RPM     |rpm      |2000     |2000     |0        |65535    |Writable |0524     |0        |16       |
+X        |05-37    |0525H    |PM Pole number   |####     |10       |10       |0        |65535    |Writable |0525     |0        |20       |
+X        |05-38    |0526H    |PM Intertia      |kgm2     |49.6     |0.0      |0.0      |6553.5   |Writable |0526     |1        |272      |
+X        |05-39    |0527H    |PM Rs            |ohm      |0.000    |0.000    |0.000    |65.535   |Writable |0527     |3        |784      |
+X        |05-40    |0528H    |PM Ld            |mH       |0.00     |0.00     |0.00     |655.35   |Writable |0528     |2        |528      |
+X        |05-41    |0529H    |PM Lq            |mH       |0.00     |0.00     |0.00     |655.35   |Writable |0529     |2        |528      |
+X        |05-42    |052AH    |PM Magnetic ANGl |DEG      |0.0      |0.0      |0.0      |360.0    |Writable |052A     |1        |272      |
+X        |05-43    |052BH    |PM Ke Cofficient |V        |0        |0        |0        |65535    |Writable |052B     |0        |16       |
+X        |05-44    |052CH    |Reserved         |####     |32       |32       |0        |65535    |Read-Only|052C     |0        |32776    |
+X        |05-45    |052DH    |Reserved         |####     |2330     |2330     |0        |65535    |Read-Only|052D     |0        |32776    |
+X        |05-46    |052EH    |Reserved         |####     |6000     |6000     |0        |10000    |Read-Only|052E     |0        |32776    |
+X        |05-47    |052FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|052F     |0        |32776    |
+X        |05-48    |0530H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0530     |0        |32776    |
+X        |05-49    |0531H    |Reserved         |####     |3000     |3000     |0        |18000    |Read-Only|0531     |0        |32776    |
+X        |05-50    |0532H    |Reserved         |####     |3000     |3000     |0        |18000    |Read-Only|0532     |0        |32776    |
+X        |05-51    |0533H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0533     |0        |32776    |
+X        |05-52    |0534H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0534     |0        |32776    |
+X        |05-53    |0535H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0535     |0        |32776    |
+X        |05-54    |0536H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0536     |0        |32776    |
+X        |05-55    |0537H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0537     |0        |32776    |
+X        |05-56    |0538H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0538     |0        |32776    |
+X        |05-57    |0539H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0539     |0        |32776    |
+X        |05-58    |053AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|053A     |0        |32776    |
+X        |05-59    |053BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|053B     |0        |32776    |
+X        |05-60    |053CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|053C     |0        |32776    |
+X        |05-61    |053DH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|053D     |0        |32776    |
+X        |05-62    |053EH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|053E     |0        |32776    |
+X        |05-63    |053FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|053F     |0        |32776    |
+X        |05-64    |0540H    |Motor3 Rated A   |Amps     |8.10     |8.10     |0.90     |10.80    |Writable |0540     |2        |1553     |
+X        |05-65    |0541H    |Motor3 Rated P   |Kw       |3.75     |0.00     |0.00     |655.35   |Writable |0541     |2        |530      |
+X        |05-66    |0542H    |Motor3 Rated     |rpm      |1710     |1710     |0        |65535    |Writable |0542     |0        |19       |
+X        |05-67    |0543H    |Motor3 Poles     |####     |4        |4        |2        |20       |Writable |0543     |0        |21       |
+X        |05-68    |0544H    |Motor3 No-Load   |Amps     |3.60     |0.00     |0.00     |8.10     |Writable |0544     |2        |1553     |
+X        |05-69    |0545H    |Motor3 Rs        |ohm      |3.333    |0.000    |0.000    |65.535   |Writable |0545     |3        |784      |
+X        |05-70    |0546H    |Motor4 Rated A   |Amps     |8.10     |8.10     |0.90     |10.80    |Writable |0546     |2        |1553     |
+X        |05-71    |0547H    |Motor4 Rated P   |Kw       |3.75     |0.00     |0.00     |655.35   |Writable |0547     |2        |530      |
+X        |05-72    |0548H    |Motor4 Rated     |rpm      |1710     |1710     |0        |65535    |Writable |0548     |0        |19       |
+X        |05-73    |0549H    |Motor4 Poles     |####     |4        |4        |2        |20       |Writable |0549     |0        |21       |
+X        |05-74    |054AH    |Motor4 No-Load   |Amps     |3.60     |0.00     |0.00     |8.10     |Writable |054A     |2        |1553     |
+X        |05-75    |054BH    |Motor4 Rs        |ohm      |3.333    |0.000    |0.000    |65.535   |Writable |054B     |3        |784      |
+X        |*****    |*****    |6 - PROTECTION   |*****    |*****    |*****    |*****    |*****    |*****    |*****    |*****    |         |
+X        |06-00    |0600H    |Low Voltage      |V        |360.0    |360.0    |300.0    |440.0    |Writable |0600     |1        |275      |
+X        |06-01    |0601H    |OV Stall Level   |V        |760.0    |760.0    |0.0      |900.0    |Writable |0601     |1        |275      |
+X        |06-02    |0602H    |STALL V MODE     |####     |0        |0        |0        |1        |Writable |0602     |0        |19       |
+X        |06-03    |0603H    |OCA Level        |%        |180      |180      |0        |200      |Writable |0603     |0        |19       |
+X        |06-04    |0604H    |OCN Level        |%        |180      |180      |0        |200      |Writable |0604     |0        |19       |
+X        |06-05    |0605H    |Stall ACCDEC SEL |####     |0        |0        |0        |5        |Writable |0605     |0        |8210     |
+V        |06-06    |0606H    |Over TQC1 Method |####     |3        |0        |0        |4        |Writable |0606     |0        |8210     |
+V        |06-07    |0607H    |Over TQC1 Level  |%        |100      |120      |10       |250      |Writable |0607     |0        |18       |
+X        |06-08    |0608H    |Over TQC1 Time   |sec      |1.0      |0.1      |0.1      |60.0     |Writable |0608     |1        |274      |
+X        |06-09    |0609H    |Over TQC2 Method |####     |0        |0        |0        |4        |Writable |0609     |0        |8210     |
+X        |06-10    |060AH    |Over TQC2 Level  |%        |120      |120      |10       |250      |Writable |060A     |0        |18       |
+X        |06-11    |060BH    |Over TQC2 Time   |sec      |0.1      |0.1      |0.1      |60.0     |Writable |060B     |1        |274      |
+X        |06-12    |060CH    |Current Limit    |%        |150      |150      |0        |250      |Writable |060C     |0        |18       |
+X        |06-13    |060DH    |Thermal RLY1 SEL |####     |2        |2        |0        |2        |Writable |060D     |0        |8210     |
+X        |06-14    |060EH    |Thermal RLY1 T   |sec      |60.0     |60.0     |30.0     |600.0    |Writable |060E     |1        |274      |
+X        |06-15    |060FH    |OH Warn Level    |oC       |110.0    |105.0    |0.0      |110.0    |Writable |060F     |1        |274      |
+X        |06-16    |0610H    |Stall Level LIMT |%        |100      |100      |0        |100      |Writable |0610     |0        |18       |
+X        |06-17    |0611H    |1st Fault Record |####     |26       |0        |0        |65535    |Read-Only|0611     |0        |8200     |
+X        |06-18    |0612H    |2nd Fault Record |####     |26       |0        |0        |65535    |Read-Only|0612     |0        |8200     |
+X        |06-19    |0613H    |3rd Fault Record |####     |26       |0        |0        |65535    |Read-Only|0613     |0        |8200     |
+X        |06-20    |0614H    |4th Fault Record |####     |141      |0        |0        |65535    |Read-Only|0614     |0        |8200     |
+X        |06-21    |0615H    |5th Fault Record |####     |4        |0        |0        |65535    |Read-Only|0615     |0        |8200     |
+X        |06-22    |0616H    |6th Fault Record |####     |21       |0        |0        |65535    |Read-Only|0616     |0        |8200     |
+X        |06-23    |0617H    |Fault Option 1   |####     |0        |0        |0        |65535    |Writable |0617     |0        |18       |
+X        |06-24    |0618H    |Fault Option 2   |####     |0        |0        |0        |65535    |Writable |0618     |0        |18       |
+X        |06-25    |0619H    |Fault Option 3   |####     |0        |0        |0        |65535    |Writable |0619     |0        |18       |
+X        |06-26    |061AH    |Fault Option 4   |####     |0        |0        |0        |65535    |Writable |061A     |0        |18       |
+X        |06-27    |061BH    |Thermal RLY2 SEL |####     |2        |2        |0        |2        |Writable |061B     |0        |8210     |
+X        |06-28    |061CH    |Thermal RLY2 T   |sec      |60.0     |60.0     |30.0     |600.0    |Writable |061C     |1        |274      |
+X        |06-29    |061DH    |PTC Treatments   |####     |0        |0        |0        |3        |Writable |061D     |0        |8210     |
+X        |06-30    |061EH    |PTC Level        |%        |50.0     |50.0     |0.0      |100.0    |Writable |061E     |1        |274      |
+X        |06-31    |061FH    |CMD FREQ  REC    |Hz       |132.03   |0.00     |0.00     |599.00   |Read-Only|061F     |2        |520      |
+X        |06-32    |0620H    |Out FREQ  REC    |Hz       |146.53   |0.00     |0.00     |599.00   |Read-Only|0620     |2        |520      |
+X        |06-33    |0621H    |Out Voltage REC  |V        |245.8    |0.0      |0.0      |6553.5   |Read-Only|0621     |1        |264      |
+X        |06-34    |0622H    |DCBus Value REC  |Vdc      |668.9    |0.0      |0.0      |6553.5   |Read-Only|0622     |1        |264      |
+X        |06-35    |0623H    |Isum Value REC   |Amps     |8.00     |0.00     |0.00     |655.35   |Read-Only|0623     |2        |520      |
+X        |06-36    |0624H    |IGBT Temp  REC   |oC       |46.8     |0.0      |-3276.7  |3276.7   |Read-Only|0624     |1        |392      |
+X        |06-37    |0625H    |Capacity TempREC |oC       |0.0      |0.0      |-3276.7  |3276.7   |Read-Only|0625     |1        |392      |
+X        |06-38    |0626H    |RPM of Motor REC |rpm      |819      |0        |-32767   |32767    |Read-Only|0626     |0        |136      |
+X        |06-39    |0627H    |Torque REC.      |####     |783      |0        |-32767   |32767    |Read-Only|0627     |0        |136      |
+X        |06-40    |0628H    |MI Status REC.   |####     |0000H    |0000H    |0000H    |FFFFH    |Read-Only|0628     |0        |72       |
+X        |06-41    |0629H    |MO Status REC.   |####     |0000H    |0000H    |0000H    |FFFFH    |Read-Only|0629     |0        |72       |
+X        |06-42    |062AH    |INV Status REC.  |####     |4003H    |0000H    |0000H    |FFFFH    |Read-Only|062A     |0        |72       |
+X        |06-43    |062BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|062B     |0        |32776    |
+X        |06-44    |062CH    |STO Latch Func.  |####     |0        |0        |0        |1        |Writable |062C     |0        |8210     |
+X        |06-45    |062DH    |Output Phase Los |####     |3        |3        |0        |3        |Writable |062D     |0        |8210     |
+X        |06-46    |062EH    |OPL Detection T  |sec      |0.500    |0.500    |0.000    |65.535   |Writable |062E     |3        |786      |
+X        |06-47    |062FH    |OPL Curren Band  |%        |1.00     |1.00     |0.00     |100.00   |Writable |062F     |2        |530      |
+X        |06-48    |0630H    |DCI Time for OPL |sec      |0.000    |0.000    |0.000    |65.535   |Writable |0630     |3        |786      |
+X        |06-49    |0631H    |LvX Auto Reset   |####     |0        |0        |0        |1        |Writable |0631     |0        |8210     |
+X        |06-50    |0632H    |Reserved         |####     |20       |20       |0        |60000    |Read-Only|0632     |0        |32776    |
+X        |06-51    |0633H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0633     |0        |32776    |
+X        |06-52    |0634H    |Reserved         |####     |600      |600      |0        |3200     |Read-Only|0634     |0        |32776    |
+X        |06-53    |0635H    |PHL Treatment    |####     |0        |0        |0        |1        |Writable |0635     |0        |8210     |
+X        |06-54    |0636H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0636     |0        |32776    |
+X        |06-55    |0637H    |Derating Method  |####     |0        |0        |0        |2        |Writable |0637     |0        |8210     |
+X        |06-56    |0638H    |PT DET LEVEL1    |####     |5.000    |5.000    |0.000    |10.000   |Writable |0638     |3        |786      |
+X        |06-57    |0639H    |PT DET LEVEL2    |####     |7.000    |7.000    |0.000    |10.000   |Writable |0639     |3        |786      |
+X        |06-58    |063AH    |PT DROP FREQ     |####     |0.00     |0.00     |0.00     |599.00   |Writable |063A     |2        |530      |
+X        |06-59    |063BH    |PT TREAT DLEAY   |####     |60       |60       |0        |6000     |Writable |063B     |0        |18       |
+X        |06-60    |063CH    |GFF Detect Level |%        |60.0     |60.0     |0.0      |6553.5   |Writable |063C     |1        |274      |
+X        |06-61    |063DH    |GFF LPF Gain     |sec      |0.10     |0.10     |0.00     |655.35   |Writable |063D     |2        |530      |
+X        |06-62    |063EH    |Reserved         |####     |400      |400      |0        |2000     |Read-Only|063E     |0        |32776    |
+X        |06-63    |063FH    |Error REC 1 Day  |day      |12       |0        |0        |65535    |Read-Only|063F     |0        |8        |
+X        |06-64    |0640H    |Error REC 1 Min  |min      |789      |0        |0        |65535    |Read-Only|0640     |0        |8        |
+X        |06-65    |0641H    |Error REC 2 Day  |day      |12       |0        |0        |65535    |Read-Only|0641     |0        |8        |
+X        |06-66    |0642H    |Error REC 2 Min  |min      |789      |0        |0        |65535    |Read-Only|0642     |0        |8        |
+X        |06-67    |0643H    |Error REC 3 Day  |day      |12       |0        |0        |65535    |Read-Only|0643     |0        |8        |
+X        |06-68    |0644H    |Error REC 3 Min  |min      |789      |0        |0        |65535    |Read-Only|0644     |0        |8        |
+X        |06-69    |0645H    |Error REC 4 Day  |day      |12       |0        |0        |65535    |Read-Only|0645     |0        |8        |
+X        |06-70    |0646H    |Error REC 4 Min  |min      |786      |0        |0        |65535    |Read-Only|0646     |0        |8        |
+X        |06-71    |0647H    |Under AMP Level  |%        |0.0      |0.0      |0.0      |100.0    |Writable |0647     |1        |274      |
+X        |06-72    |0648H    |Under AMP DET    |sec      |0.00     |0.00     |0.00     |360.00   |Writable |0648     |2        |530      |
+X        |06-73    |0649H    |Under AMP TRET   |####     |0        |0        |0        |3        |Writable |0649     |0        |8210     |
+X        |06-74    |064AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|064A     |0        |32776    |
+X        |06-75    |064BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|064B     |0        |32776    |
+X        |06-76    |064CH    |Reserved         |####     |400      |400      |0        |2000     |Read-Only|064C     |0        |32776    |
+X        |06-77    |064DH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|064D     |0        |32776    |
+X        |06-78    |064EH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|064E     |0        |8        |
+X        |06-79    |064FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|064F     |0        |8        |
+X        |06-80    |0650H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0650     |0        |32776    |
+X        |06-81    |0651H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0651     |0        |32776    |
+X        |06-82    |0652H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0652     |0        |32776    |
+X        |06-83    |0653H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0653     |0        |32776    |
+X        |06-84    |0654H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0654     |0        |32776    |
+X        |06-85    |0655H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0655     |0        |32776    |
+X        |06-86    |0656H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0656     |0        |32776    |
+X        |06-87    |0657H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0657     |0        |32776    |
+X        |06-88    |0658H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0658     |0        |32776    |
+X        |06-89    |0659H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0659     |0        |32776    |
+X        |06-90    |065AH    |Error REC 5 Day  |day      |12       |0        |0        |65535    |Read-Only|065A     |0        |8        |
+X        |06-91    |065BH    |Error REC 5 Min  |min      |786      |0        |0        |65535    |Read-Only|065B     |0        |8        |
+X        |06-92    |065CH    |Error REC 6 Day  |day      |12       |0        |0        |65535    |Read-Only|065C     |0        |8        |
+X        |06-93    |065DH    |Error REC 6 Min  |min      |711      |0        |0        |65535    |Read-Only|065D     |0        |8        |
+X        |*****    |*****    |7 - SPECIAL      |*****    |*****    |*****    |*****    |*****    |*****    |*****    |*****    |         |
+X        |07-00    |0700H    |SW Braking Level |Vdc      |740.0    |740.0    |700.0    |900.0    |Writable |0700     |1        |275      |
+X        |07-01    |0701H    |DC Inject Level  |%        |0        |0        |0        |100      |Writable |0701     |0        |19       |
+X        |07-02    |0702H    |DC Inject Start  |sec      |0.0      |0.0      |0.0      |60.0     |Writable |0702     |1        |275      |
+X        |07-03    |0703H    |DC Inject Stop   |sec      |0.0      |0.0      |0.0      |60.0     |Writable |0703     |1        |275      |
+X        |07-04    |0704H    |DC Inject StartF |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |0704     |2        |1555     |
+X        |07-05    |0705H    |Voltage INC Gain |####     |100      |100      |1        |200      |Writable |0705     |0        |19       |
+X        |07-06    |0706H    |Momentary Power  |####     |0        |0        |0        |2        |Writable |0706     |0        |8210     |
+X        |07-07    |0707H    |Power Loss Time  |sec      |2.0      |2.0      |0.0      |20.0     |Writable |0707     |1        |274      |
+X        |07-08    |0708H    |Base Block Time  |sec      |0.5      |0.5      |0.1      |5.0      |Writable |0708     |1        |274      |
+X        |07-09    |0709H    |SPD Search Curr  |%        |100      |100      |20       |200      |Writable |0709     |0        |18       |
+X        |07-10    |070AH    |Fault Re-RUN Way |####     |0        |0        |0        |2        |Writable |070A     |0        |8210     |
+X        |07-11    |070BH    |Auto Restart     |####     |0        |0        |0        |10       |Writable |070B     |0        |18       |
+X        |07-12    |070CH    |Restart Method   |####     |0        |0        |0        |3        |Writable |070C     |0        |8210     |
+X        |07-13    |070DH    |dEb Decel SEL    |####     |0        |0        |0        |2        |Writable |070D     |0        |8210     |
+X        |07-14    |070EH    |Reserved         |####     |30       |30       |0        |250      |Read-Only|070E     |0        |32776    |
+X        |07-15    |070FH    |Gear ACC Time    |sec      |0.00     |0.00     |0.00     |600.00   |Writable |070F     |2        |530      |
+X        |07-16    |0710H    |Gear ACC FREQ    |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |0710     |2        |1555     |
+X        |07-17    |0711H    |Gear DEC Time    |sec      |0.00     |0.00     |0.00     |600.00   |Writable |0711     |2        |530      |
+X        |07-18    |0712H    |Gear DEC FREQ    |Hz       |0.00     |0.00     |0.00     |599.00   |Writable |0712     |2        |1555     |
+X        |07-19    |0713H    |Cooling Fan Way  |####     |3        |3        |0        |3        |Writable |0713     |0        |8210     |
+X        |07-20    |0714H    |EF Stop Select   |####     |0        |0        |0        |6        |Writable |0714     |0        |8210     |
+X        |07-21    |0715H    |PowerSave Enable |####     |0        |0        |0        |1        |Writable |0715     |0        |8210     |
+X        |07-22    |0716H    |PowerSave Gain   |####     |100      |100      |10       |1000     |Writable |0716     |0        |18       |
+X        |07-23    |0717H    |Auto Voltage REG |####     |0        |0        |0        |2        |Writable |0717     |0        |8210     |
+X        |07-24    |0718H    |TQR COMP Filter  |sec      |0.050    |0.050    |0.001    |10.000   |Writable |0718     |3        |786      |
+X        |07-25    |0719H    |Slip COMP Filter |sec      |0.100    |0.100    |0.001    |10.000   |Writable |0719     |3        |786      |
+X        |07-26    |071AH    |TQR COMP Gain    |####     |1        |1        |0        |10       |Writable |071A     |0        |1043     |
+X        |07-27    |071BH    |Slip COMP Gain   |####     |0.00     |0.00     |0.00     |10.00    |Writable |071B     |2        |530      |
+X        |07-28    |071CH    |APP MACRO        |####     |0        |0        |0        |65535    |Writable |071C     |0        |18       |
+X        |07-29    |071DH    |Slip Deviation L |%        |0.0      |0.0      |0.0      |100.0    |Writable |071D     |1        |274      |
+X        |07-30    |071EH    |Slip Deviation T |sec      |1.0      |1.0      |0.0      |10.0     |Writable |071E     |1        |274      |
+X        |07-31    |071FH    |Over Slip Way    |####     |0        |0        |0        |3        |Writable |071F     |0        |8210     |
+X        |07-32    |0720H    |Hunting Gain     |####     |1000     |1000     |0        |10000    |Writable |0720     |0        |18       |
+X        |07-33    |0721H    |Reset RestartCNT |sec      |60.0     |60.0     |0.0      |6000.0   |Writable |0721     |1        |274      |
+X        |07-34    |0722H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0722     |0        |32776    |
+X        |07-35    |0723H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0723     |0        |32776    |
+X        |07-36    |0724H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0724     |0        |32776    |
+X        |07-37    |0725H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0725     |0        |32776    |
+X        |07-38    |0726H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0726     |0        |32776    |
+X        |07-39    |0727H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0727     |0        |32776    |
+X        |07-40    |0728H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0728     |0        |32776    |
+X        |07-41    |0729H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0729     |0        |32776    |
+X        |07-42    |072AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|072A     |0        |32776    |
+X        |07-43    |072BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|072B     |0        |32776    |
+X        |07-44    |072CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|072C     |0        |32776    |
+X        |07-45    |072DH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|072D     |0        |32776    |
+X        |07-46    |072EH    |OOB Sample Time  |####     |1.0      |1.0      |0.1      |120.0    |Writable |072E     |1        |272      |
+X        |07-47    |072FH    |OOB Sample Cnt.  |####     |20       |20       |0        |32       |Writable |072F     |0        |16       |
+X        |07-48    |0730H    |OOB Sample Angle |####     |360.0    |360.0    |0.0      |6553.5   |Read-Only|0730     |1        |2328     |
+X        |07-49    |0731H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0731     |0        |32776    |
+X        |07-50    |0732H    |Reserved         |%        |60       |60       |0        |100      |Writable |0732     |0        |18       |
+X        |07-51    |0733H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0733     |0        |32776    |
+X        |07-52    |0734H    |Reserved         |####     |2000     |2000     |0        |65535    |Read-Only|0734     |0        |32776    |
+X        |07-53    |0735H    |Reserved         |####     |100      |100      |0        |65535    |Read-Only|0735     |0        |32776    |
+X        |07-54    |0736H    |AUTO ACC/DEC Kp  |Hz       |2        |2        |0        |65535    |Writable |0736     |0        |18       |
+X        |07-55    |0737H    |AUTO ACC/DEC Ki  |sec      |0.400    |0.400    |0.000    |65.535   |Writable |0737     |3        |786      |
+X        |07-56    |0738H    |Reserved         |####     |100      |100      |0        |100      |Read-Only|0738     |0        |32776    |
+X        |07-57    |0739H    |Reserved         |####     |1000     |1000     |0        |65535    |Read-Only|0739     |0        |32776    |
+X        |07-58    |073AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|073A     |0        |32776    |
+X        |07-59    |073BH    |Reserved         |####     |60000    |60000    |0        |65535    |Read-Only|073B     |0        |32776    |
+X        |07-60    |073CH    |Reserved         |####     |8        |8        |0        |65535    |Read-Only|073C     |0        |32776    |
+X        |07-61    |073DH    |Reserved         |####     |5        |5        |0        |65535    |Read-Only|073D     |0        |32776    |
+X        |07-62    |073EH    |dEb DEC Ikp      |####     |8000     |8000     |0        |65535    |Writable |073E     |0        |18       |
+X        |07-63    |073FH    |Reserved         |####     |150      |150      |0        |65535    |Read-Only|073F     |0        |32776    |
+X        |07-64    |0740H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0740     |0        |32776    |
+X        |07-65    |0741H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0741     |0        |32776    |
+X        |07-66    |0742H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0742     |0        |32776    |
+X        |07-67    |0743H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0743     |0        |32776    |
+X        |07-68    |0744H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0744     |0        |32776    |
+X        |07-69    |0745H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0745     |0        |32776    |
+X        |07-70    |0746H    |Reserved         |####     |10485    |10485    |0        |26214    |Read-Only|0746     |0        |32776    |
+X        |07-71    |0747H    |M2 TQR COMP Gain |####     |1        |1        |0        |10       |Writable |0747     |0        |1043     |
+X        |07-72    |0748H    |M2Slip COMP Gain |####     |0.00     |0.00     |0.00     |10.00    |Writable |0748     |2        |530      |
+X        |07-73    |0749H    |M3 TQR COMP Gain |####     |1        |1        |0        |10       |Writable |0749     |0        |1043     |
+X        |07-74    |074AH    |M3Slip COMP Gain |####     |0.00     |0.00     |0.00     |10.00    |Writable |074A     |2        |530      |
+X        |07-75    |074BH    |M4 TQR COMP Gain |####     |1        |1        |0        |10       |Writable |074B     |0        |1043     |
+X        |07-76    |074CH    |M4Slip COMP Gain |####     |0.00     |0.00     |0.00     |10.00    |Writable |074C     |2        |530      |
+X        |*****    |*****    |8 - PID CONTROL  |*****    |*****    |*****    |*****    |*****    |*****    |*****    |*****    |         |
+X        |08-00    |0800H    |PID FBK SEL      |####     |0        |0        |0        |8        |Writable |0800     |0        |8210     |
+X        |08-01    |0801H    |P Gain of PID    |####     |1.0      |1.0      |0.0      |500.0    |Writable |0801     |1        |274      |
+X        |08-02    |0802H    |I Gain of PID    |sec      |1.00     |1.00     |0.00     |100.00   |Writable |0802     |2        |530      |
+X        |08-03    |0803H    |D Gain of PID    |####     |0.00     |0.00     |0.00     |1.00     |Writable |0803     |2        |530      |
+X        |08-04    |0804H    |Up Limit for I   |%        |100.0    |100.0    |0.0      |100.0    |Writable |0804     |1        |274      |
+X        |08-05    |0805H    |PID Out-Limit %  |%        |100.0    |100.0    |0.0      |100.0    |Writable |0805     |1        |274      |
+X        |08-06    |0806H    |PID Fbk Value    |####     |0.00     |0.00     |-200.00  |200.00   |Read-Only|0806     |2        |1690     |
+X        |08-07    |0807H    |PID Out-Filter   |sec      |0.0      |0.0      |0.0      |2.5      |Writable |0807     |1        |274      |
+X        |08-08    |0808H    |FBK Detect Time  |sec      |0.0      |0.0      |0.0      |3600.0   |Writable |0808     |1        |274      |
+X        |08-09    |0809H    |PID FBK Loss     |####     |0        |0        |0        |3        |Writable |0809     |0        |8210     |
+X        |08-10    |080AH    |Sleep Point      |####     |0.00     |0.00     |0.00     |599.00   |Writable |080A     |2        |1555     |
+X        |08-11    |080BH    |Wake Point       |####     |0.00     |0.00     |0.00     |599.00   |Writable |080B     |2        |1555     |
+X        |08-12    |080CH    |Sleep Time       |sec      |0.0      |0.0      |0.0      |6000.0   |Writable |080C     |1        |274      |
+X        |08-13    |080DH    |PID DEV. Level   |%        |10.0     |10.0     |1.0      |50.0     |Writable |080D     |1        |274      |
+X        |08-14    |080EH    |PID DEV. Time    |sec      |5.0      |5.0      |0.1      |300.0    |Writable |080E     |1        |274      |
+X        |08-15    |080FH    |PID FBK Filter   |sec      |5.0      |5.0      |0.1      |300.0    |Writable |080F     |1        |274      |
+X        |08-16    |0810H    |PID Offset Way   |####     |0        |0        |0        |1        |Writable |0810     |0        |8210     |
+X        |08-17    |0811H    |PID Offset       |%        |0.0      |0.0      |-100.0   |100.0    |Writable |0811     |1        |1426     |
+X        |08-18    |0812H    |Source of Sleep  |####     |0        |0        |0        |1        |Writable |0812     |0        |8208     |
+X        |08-19    |0813H    |I Limit for Wake |%        |50.0     |50.0     |0.0      |200.0    |Writable |0813     |1        |274      |
+X        |08-20    |0814H    |PID Mode         |####     |0        |0        |0        |1        |Writable |0814     |0        |8208     |
+X        |08-21    |0815H    |PID Reserve      |####     |0        |0        |0        |1        |Writable |0815     |0        |8208     |
+X        |08-22    |0816H    |Wake Delay Time  |####     |0.00     |0.00     |0.00     |600.00   |Writable |0816     |2        |530      |
+X        |08-23    |0817H    |PID CTRL BIT     |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |0817     |0        |1106     |
+X        |08-24    |0818H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0818     |0        |32776    |
+X        |08-25    |0819H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0819     |0        |32776    |
+X        |08-26    |081AH    |PID Neg.OutLmit% |%        |100.0    |100.0    |0.0      |110.0    |Writable |081A     |1        |274      |
+X        |08-27    |081BH    |PID Cmd ACC/DEC  |sec      |0.00     |0.00     |0.00     |655.35   |Writable |081B     |2        |530      |
+X        |08-28    |081CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|081C     |0        |32776    |
+X        |08-29    |081DH    |PID Base SEL     |####     |0        |0        |0        |1        |Writable |081D     |0        |16       |
+X        |*****    |*****    |9 - COMMUNICATION|*****    |*****    |*****    |*****    |*****    |*****    |*****    |*****    |         |
+X        |09-00    |0900H    |VFD Comm Address |####     |1        |1        |1        |254      |Writable |0900     |0        |18       |
+X        |09-01    |0901H    |MODBUS BaudRate  |bps      |9.6      |9.6      |4.8      |115.2    |Writable |0901     |1        |274      |
+X        |09-02    |0902H    |MODBUS Fault Way |####     |3        |3        |0        |3        |Writable |0902     |0        |8210     |
+X        |09-03    |0903H    |MODBUS Time Out  |sec      |0.0      |0.0      |0.0      |100.0    |Writable |0903     |1        |274      |
+X        |09-04    |0904H    |MODBUS Protocol  |####     |1        |1        |1        |17       |Writable |0904     |0        |8210     |
+X        |09-05    |0905H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0905     |0        |32776    |
+X        |09-06    |0906H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0906     |0        |32776    |
+X        |09-07    |0907H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0907     |0        |32776    |
+X        |09-08    |0908H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0908     |0        |32776    |
+X        |09-09    |0909H    |Response Delay T |ms       |2.0      |2.0      |0.0      |200.0    |Writable |0909     |1        |274      |
+X        |09-10    |090AH    |Comm Main FREQ   |Hz       |60.00    |60.00    |0.00     |599.00   |Read-Only|090A     |2        |1561     |
+X        |09-11    |090BH    |Block TRANS  1   |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |090B     |0        |82       |
+X        |09-12    |090CH    |Block TRANS  2   |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |090C     |0        |82       |
+X        |09-13    |090DH    |Block TRANS  3   |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |090D     |0        |82       |
+X        |09-14    |090EH    |Block TRANS  4   |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |090E     |0        |82       |
+X        |09-15    |090FH    |Block TRANS  5   |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |090F     |0        |82       |
+X        |09-16    |0910H    |Block TRANS  6   |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |0910     |0        |82       |
+X        |09-17    |0911H    |Block TRANS  7   |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |0911     |0        |82       |
+X        |09-18    |0912H    |Block TRANS  8   |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |0912     |0        |82       |
+X        |09-19    |0913H    |Block TRANS  9   |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |0913     |0        |82       |
+X        |09-20    |0914H    |Block TRANS  10  |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |0914     |0        |82       |
+X        |09-21    |0915H    |Block TRANS  11  |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |0915     |0        |82       |
+X        |09-22    |0916H    |Block TRANS  12  |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |0916     |0        |82       |
+X        |09-23    |0917H    |Block TRANS  13  |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |0917     |0        |82       |
+X        |09-24    |0918H    |Block TRANS  14  |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |0918     |0        |82       |
+X        |09-25    |0919H    |Block TRANS  15  |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |0919     |0        |82       |
+X        |09-26    |091AH    |Block TRANS  16  |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |091A     |0        |82       |
+X        |09-27    |091BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|091B     |0        |32776    |
+X        |09-28    |091CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|091C     |0        |32776    |
+X        |09-29    |091DH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|091D     |0        |32776    |
+X        |09-30    |091EH    |Com Decode       |####     |1        |1        |0        |1        |Writable |091E     |0        |8208     |
+X        |09-31    |091FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|091F     |0        |32776    |
+X        |09-32    |0920H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0920     |0        |32776    |
+X        |09-33    |0921H    |PLC Cmd Force 0  |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |0921     |0        |82       |
+X        |09-34    |0922H    |PLC Prog ID      |####     |0000H    |0000H    |0000H    |FFFFH    |Read-Only|0922     |0        |16456    |
+X        |09-35    |0923H    |PLC Address      |####     |2        |2        |1        |254      |Writable |0923     |0        |16       |
+X        |09-36    |0924H    |CANOp Slave Ads  |####     |0        |0        |0        |127      |Writable |0924     |0        |16       |
+X        |09-37    |0925H    |CANOp Rate       |####     |0        |0        |0        |5        |Writable |0925     |0        |8208     |
+X        |09-38    |0926H    |Reserved         |####     |100      |100      |0        |200      |Read-Only|0926     |0        |32776    |
+X        |09-39    |0927H    |Canbus Warn      |####     |0        |0        |0        |65535    |Read-Only|0927     |0        |16408    |
+X        |09-40    |0928H    |Use DS402 Decode |####     |1        |1        |0        |1        |Writable |0928     |0        |8208     |
+X        |09-41    |0929H    |CANOp Com State  |####     |0        |0        |0        |5        |Read-Only|0929     |0        |24600    |
+X        |09-42    |092AH    |CANOp MOT State  |####     |0        |0        |0        |14       |Read-Only|092A     |0        |24600    |
+X        |09-43    |092BH    |RST CANOp IDX    |####     |65535    |65535    |0        |65535    |Writable |092B     |0        |1040     |
+X        |09-44    |092CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|092C     |0        |32776    |
+X        |09-45    |092DH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|092D     |0        |32776    |
+X        |09-46    |092EH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|092E     |0        |32776    |
+X        |09-47    |092FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|092F     |0        |32776    |
+X        |09-48    |0930H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0930     |0        |32776    |
+X        |09-49    |0931H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0931     |0        |32776    |
+X        |09-50    |0932H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0932     |0        |32776    |
+X        |09-51    |0933H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0933     |0        |32776    |
+X        |09-52    |0934H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0934     |0        |32776    |
+X        |09-53    |0935H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0935     |0        |32776    |
+X        |09-54    |0936H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0936     |0        |32776    |
+X        |09-55    |0937H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0937     |0        |32776    |
+X        |09-56    |0938H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0938     |0        |32776    |
+X        |09-57    |0939H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0939     |0        |32776    |
+X        |09-58    |093AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|093A     |0        |32776    |
+X        |09-59    |093BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|093B     |0        |32776    |
+X        |09-60    |093CH    |C_Card Type      |####     |0        |0        |0        |8        |Read-Only|093C     |0        |24600    |
+X        |09-61    |093DH    |C_Card Version   |####     |0        |0        |0        |65535    |Read-Only|093D     |0        |16408    |
+X        |09-62    |093EH    |C_Card P Code    |####     |0        |0        |0        |65535    |Read-Only|093E     |0        |16408    |
+X        |09-63    |093FH    |C_Card Err Code  |####     |0        |0        |0        |65535    |Read-Only|093F     |0        |16408    |
+X        |09-64    |0940H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0940     |0        |32776    |
+X        |09-65    |0941H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0941     |0        |32776    |
+X        |09-66    |0942H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0942     |0        |32776    |
+X        |09-67    |0943H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0943     |0        |32776    |
+X        |09-68    |0944H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0944     |0        |32776    |
+X        |09-69    |0945H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0945     |0        |32776    |
+X        |09-70    |0946H    |C_Card ID ADS    |####     |1        |1        |0        |125      |Writable |0946     |0        |18       |
+X        |09-71    |0947H    |C_Card Rate      |####     |2        |2        |0        |8        |Writable |0947     |0        |18       |
+X        |09-72    |0948H    |C_Card Rate ESet |####     |0        |0        |0        |1        |Writable |0948     |0        |18       |
+X        |09-73    |0949H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0949     |0        |32776    |
+X        |09-74    |094AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|094A     |0        |32776    |
+X        |09-75    |094BH    |C_Card IP CONF   |####     |0        |0        |0        |1        |Writable |094B     |0        |18       |
+X        |09-76    |094CH    |C_Card IP ADS1   |####     |0        |0        |0        |255      |Writable |094C     |0        |18       |
+X        |09-77    |094DH    |C_Card IP ADS2   |####     |0        |0        |0        |255      |Writable |094D     |0        |18       |
+X        |09-78    |094EH    |C_Card IP ADS3   |####     |0        |0        |0        |255      |Writable |094E     |0        |18       |
+X        |09-79    |094FH    |C_Card IP ADS4   |####     |0        |0        |0        |255      |Writable |094F     |0        |18       |
+X        |09-80    |0950H    |C_Card Mask ADS1 |####     |0        |0        |0        |255      |Writable |0950     |0        |18       |
+X        |09-81    |0951H    |C_Card Mask ADS2 |####     |0        |0        |0        |255      |Writable |0951     |0        |18       |
+X        |09-82    |0952H    |C_Card Mask ADS3 |####     |0        |0        |0        |255      |Writable |0952     |0        |18       |
+X        |09-83    |0953H    |C_Card Mask ADS4 |####     |0        |0        |0        |255      |Writable |0953     |0        |18       |
+X        |09-84    |0954H    |C_Card GWay ADS1 |####     |0        |0        |0        |255      |Writable |0954     |0        |18       |
+X        |09-85    |0955H    |C_Card GWay ADS2 |####     |0        |0        |0        |255      |Writable |0955     |0        |18       |
+X        |09-86    |0956H    |C_Card GWay ADS3 |####     |0        |0        |0        |255      |Writable |0956     |0        |18       |
+X        |09-87    |0957H    |C_Card GWay ADS4 |####     |0        |0        |0        |255      |Writable |0957     |0        |18       |
+X        |09-88    |0958H    |C_Card Pssword L |####     |0        |0        |0        |99       |Writable |0958     |0        |18       |
+X        |09-89    |0959H    |C_Card Pssword H |####     |0        |0        |0        |99       |Writable |0959     |0        |18       |
+X        |09-90    |095AH    |C_Card RECOV Rst |####     |0        |0        |0        |1        |Writable |095A     |0        |18       |
+X        |09-91    |095BH    |C_Card Ext Set   |####     |0        |0        |0        |65535    |Writable |095B     |0        |18       |
+X        |09-92    |095CH    |C_Card Status    |####     |0        |0        |0        |65535    |Read-Only|095C     |0        |16408    |
+X        |*****    |*****    |10 - SPEED FEEDBACK|*****    |*****    |*****    |*****    |*****    |*****    |*****    |*****    |         |
+X        |10-00    |0A00H    |Encoder Type     |####     |0        |0        |0        |5        |Writable |0A00     |0        |8209     |
+X        |10-01    |0A01H    |Encoder Pulse    |ppr      |600      |600      |1        |20000    |Writable |0A01     |0        |16       |
+X        |10-02    |0A02H    |Enocder Signal   |####     |0        |0        |0        |5        |Writable |0A02     |0        |8208     |
+X        |10-03    |0A03H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0A03     |0        |32776    |
+X        |10-04    |0A04H    |PG MECH Gear A1  |####     |100      |100      |1        |65535    |Writable |0A04     |0        |18       |
+X        |10-05    |0A05H    |PG MECH Gear B1  |####     |100      |100      |1        |65535    |Writable |0A05     |0        |18       |
+X        |10-06    |0A06H    |PG MECH Gear A2  |####     |100      |100      |1        |65535    |Writable |0A06     |0        |18       |
+X        |10-07    |0A07H    |PG MECH Gear B2  |####     |100      |100      |1        |65535    |Writable |0A07     |0        |18       |
+X        |10-08    |0A08H    |PG FBK Loss Way  |####     |2        |2        |0        |2        |Writable |0A08     |0        |8210     |
+X        |10-09    |0A09H    |PG FBK Loss Det. |sec      |1.0      |1.0      |0.0      |10.0     |Writable |0A09     |1        |274      |
+X        |10-10    |0A0AH    |OverSPD Level    |%        |115      |115      |0        |120      |Writable |0A0A     |0        |18       |
+X        |10-11    |0A0BH    |OverSPD DET Time |sec      |0.1      |0.1      |0.0      |2.0      |Writable |0A0B     |1        |274      |
+X        |10-12    |0A0CH    |OverSPD Treat    |####     |2        |2        |0        |2        |Writable |0A0C     |0        |8210     |
+X        |10-13    |0A0DH    |Deviation Level  |%        |50       |50       |0        |50       |Writable |0A0D     |0        |18       |
+X        |10-14    |0A0EH    |Deviation DET    |sec      |0.5      |0.5      |0.0      |10.0     |Writable |0A0E     |1        |274      |
+X        |10-15    |0A0FH    |Deviation Treat  |####     |2        |2        |0        |2        |Writable |0A0F     |0        |8210     |
+X        |10-16    |0A10H    |REF Pulse Signal |####     |0        |0        |0        |5        |Writable |0A10     |0        |8210     |
+X        |10-17    |0A11H    |Electrical GearA |####     |100      |100      |1        |65535    |Writable |0A11     |0        |18       |
+X        |10-18    |0A12H    |Electrical GearB |####     |100      |100      |1        |65535    |Writable |0A12     |0        |18       |
+X        |10-19    |0A13H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0A13     |0        |32776    |
+X        |10-20    |0A14H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0A14     |0        |32776    |
+X        |10-21    |0A15H    |REF Pulse Filter |####     |0.100    |0.100    |0.000    |65.535   |Writable |0A15     |3        |786      |
+X        |10-22    |0A16H    |PGREF SPD Mode   |####     |0        |0        |0        |1        |Writable |0A16     |0        |8208     |
+X        |10-23    |0A17H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0A17     |0        |32776    |
+X        |10-24    |0A18H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0A18     |0        |32776    |
+X        |10-25    |0A19H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0A19     |0        |32776    |
+X        |10-26    |0A1AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0A1A     |0        |32776    |
+X        |10-27    |0A1BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0A1B     |0        |32776    |
+X        |10-28    |0A1CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0A1C     |0        |32776    |
+X        |10-29    |0A1DH    |MAX Slip Freq.   |Hz       |20.00    |20.00    |0.00     |200.00   |Writable |0A1D     |2        |1554     |
+X        |10-30    |0A1EH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0A1E     |0        |32776    |
+X        |10-31    |0A1FH    |I/F Id Level     |%        |40       |40       |0        |150      |Writable |0A1F     |0        |18       |
+X        |10-32    |0A20H    |Hi-SPD OBS BW    |Hz       |5.00     |5.00     |0.00     |600.00   |Writable |0A20     |2        |530      |
+X        |10-33    |0A21H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0A21     |0        |32776    |
+X        |10-34    |0A22H    |EST-FREQ LPF     |####     |1.00     |1.00     |0.00     |655.35   |Writable |0A22     |2        |530      |
+X        |10-35    |0A23H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0A23     |0        |32776    |
+X        |10-36    |0A24H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0A24     |0        |32776    |
+X        |10-37    |0A25H    |PMLESS CTRL SEL  |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |0A25     |0        |82       |
+X        |10-38    |0A26H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0A26     |0        |32776    |
+X        |10-39    |0A27H    |VFIRMS to VFFLUX |Hz       |20.00    |20.00    |0.00     |599.00   |Writable |0A27     |2        |1555     |
+X        |10-40    |0A28H    |PMLESS to IF     |Hz       |20.00    |20.00    |0.00     |599.00   |Writable |0A28     |2        |1555     |
+X        |10-41    |0A29H    |LPF Gain of Id   |sec      |0.2      |0.2      |0.0      |6.0      |Writable |0A29     |1        |274      |
+X        |10-42    |0A2AH    |Rot Pos Det PLS  |ms       |1.0      |1.0      |0.0      |3.0      |Writable |0A2A     |1        |275      |
+X        |10-43    |0A2BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0A2B     |0        |32776    |
+X        |10-44    |0A2CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0A2C     |0        |32776    |
+X        |10-45    |0A2DH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0A2D     |0        |32776    |
+X        |10-46    |0A2EH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0A2E     |0        |32776    |
+X        |10-47    |0A2FH    |Reserved         |####     |1        |1        |0        |2000     |Read-Only|0A2F     |0        |32776    |
+X        |10-48    |0A30H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0A30     |0        |32776    |
+X        |10-49    |0A31H    |ZeroVoltage Time |####     |0.000    |0.000    |0.000    |60.000   |Writable |0A31     |3        |786      |
+X        |10-50    |0A32H    |Rev. Theta Limit |####     |10.00    |10.00    |0.00     |30.00    |Writable |0A32     |2        |530      |
+X        |10-51    |0A33H    |INJ Frequency    |####     |500      |500      |0        |1200     |Writable |0A33     |0        |18       |
+X        |10-52    |0A34H    |INJ Magnitude    |####     |30.0     |30.0     |0.0      |200.0    |Writable |0A34     |1        |274      |
+X        |10-53    |0A35H    |Mag.Angle DET    |####     |0        |0        |0        |5        |Writable |0A35     |0        |18       |
+X        |*****    |*****    |11 - ADVANCE SET |*****    |*****    |*****    |*****    |*****    |*****    |*****    |*****    |         |
+X        |11-00    |0B00H    |System Control   |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |0B00     |0        |80       |
+X        |11-01    |0B01H    |Reserved         |####     |256      |256      |1        |65535    |Writable |0B01     |0        |32768    |
+X        |11-02    |0B02H    |Reserved         |####     |700      |700      |500      |59900    |Read-Only|0B02     |0        |32776    |
+X        |11-03    |0B03H    |Reserved         |####     |10       |10       |1        |40       |Read-Only|0B03     |0        |33818    |
+X        |11-04    |0B04H    |Reserved         |####     |10       |10       |1        |40       |Read-Only|0B04     |0        |33818    |
+X        |11-05    |0B05H    |Reserved         |####     |10       |10       |1        |40       |Read-Only|0B05     |0        |33818    |
+X        |11-06    |0B06H    |ASR1 Kp(Low SPD) |Hz       |10       |10       |0        |40       |Writable |0B06     |0        |1043     |
+X        |11-07    |0B07H    |ASR1 Ki(Low SPD) |sec      |0.100    |0.100    |0.000    |10.000   |Writable |0B07     |3        |1810     |
+X        |11-08    |0B08H    |Reserved         |####     |10       |10       |0        |40       |Writable |0B08     |0        |32768    |
+X        |11-09    |0B09H    |Reserved         |####     |100      |100      |0        |10000    |Writable |0B09     |0        |32768    |
+X        |11-10    |0B0AH    |Reserved         |####     |10       |10       |0        |40       |Writable |0B0A     |0        |32768    |
+X        |11-11    |0B0BH    |Reserved         |####     |100      |100      |0        |10000    |Writable |0B0B     |0        |32768    |
+X        |11-12    |0B0CH    |Reserved         |####     |0        |0        |0        |200      |Read-Only|0B0C     |0        |32776    |
+X        |11-13    |0B0DH    |Reserved         |####     |30       |30       |0        |200      |Read-Only|0B0D     |0        |32776    |
+X        |11-14    |0B0EH    |Reserved         |####     |8        |8        |0        |350      |Read-Only|0B0E     |0        |32776    |
+X        |11-15    |0B0FH    |Reserved         |####     |0        |0        |0        |20       |Read-Only|0B0F     |0        |32776    |
+X        |11-16    |0B10H    |Reserved         |####     |0        |0        |0        |20000    |Read-Only|0B10     |0        |32776    |
+X        |11-17    |0B11H    |Reserved         |####     |500      |500      |0        |500      |Read-Only|0B11     |0        |32776    |
+X        |11-18    |0B12H    |Reserved         |####     |500      |500      |0        |500      |Read-Only|0B12     |0        |32776    |
+X        |11-19    |0B13H    |Reserved         |####     |500      |500      |0        |500      |Read-Only|0B13     |0        |32776    |
+X        |11-20    |0B14H    |Reserved         |####     |500      |500      |0        |500      |Read-Only|0B14     |0        |32776    |
+X        |11-21    |0B15H    |Reserved         |####     |90       |90       |0        |200      |Read-Only|0B15     |0        |32776    |
+X        |11-22    |0B16H    |Reserved         |####     |90       |90       |0        |200      |Read-Only|0B16     |0        |32776    |
+X        |11-23    |0B17H    |Reserved         |####     |65       |65       |0        |150      |Read-Only|0B17     |0        |32776    |
+X        |11-24    |0B18H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0B18     |0        |32776    |
+X        |11-25    |0B19H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0B19     |0        |32776    |
+X        |11-26    |0B1AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0B1A     |0        |32776    |
+X        |11-27    |0B1BH    |Reserved         |####     |100      |100      |0        |500      |Read-Only|0B1B     |0        |32776    |
+X        |11-28    |0B1CH    |Reserved         |####     |0        |0        |0        |3        |Read-Only|0B1C     |0        |32776    |
+X        |11-29    |0B1DH    |Reserved         |####     |0        |0        |0        |1000     |Read-Only|0B1D     |0        |32776    |
+X        |11-30    |0B1EH    |Reserved         |####     |300      |300      |0        |1000     |Read-Only|0B1E     |0        |32776    |
+X        |11-31    |0B1FH    |Reserved         |####     |200      |200      |0        |1000     |Read-Only|0B1F     |0        |32776    |
+X        |11-32    |0B20H    |Reserved         |####     |100      |100      |0        |1000     |Read-Only|0B20     |0        |32776    |
+X        |11-33    |0B21H    |Reserved         |####     |0        |0        |0        |3        |Read-Only|0B21     |0        |32776    |
+X        |11-34    |0B22H    |Reserved         |####     |0        |0        |0        |1000     |Writable |0B22     |0        |32768    |
+X        |11-35    |0B23H    |Reserved         |####     |0        |0        |0        |1000     |Read-Only|0B23     |0        |32776    |
+X        |11-36    |0B24H    |Reserved         |####     |0        |0        |0        |2        |Read-Only|0B24     |0        |32776    |
+X        |11-37    |0B25H    |Reserved         |####     |10       |10       |0        |120      |Read-Only|0B25     |0        |32776    |
+X        |11-38    |0B26H    |Reserved         |####     |10       |10       |0        |120      |Read-Only|0B26     |0        |32776    |
+X        |11-39    |0B27H    |Reserved         |####     |0        |0        |0        |1        |Read-Only|0B27     |0        |32776    |
+X        |11-40    |0B28H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0B28     |0        |32776    |
+X        |11-41    |0B29H    |PWM Mode         |####     |2        |2        |0        |2        |Writable |0B29     |0        |8208     |
+X        |11-42    |0B2AH    |System Flag      |####     |0000H    |0000H    |0000H    |FFFFH    |Writable |0B2A     |0        |82       |
+X        |*****    |*****    |12 - RESERVE     |*****    |*****    |*****    |*****    |*****    |*****    |*****    |*****    |         |
+X        |12-00    |0C00H    |Reserved         |####     |0        |0        |0        |65535    |Writable |0C00     |0        |16       |
+X        |*****    |*****    |13 - MACRO       |*****    |*****    |*****    |*****    |*****    |*****    |*****    |*****    |         |
+X        |13-00    |0D00H    |MacroSelection   |####     |0        |0        |0        |8        |Writable |0D00     |0        |8208     |
+X        |13-01    |0D01H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D01     |2        |1554     |
+X        |13-02    |0D02H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D02     |2        |1554     |
+X        |13-03    |0D03H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D03     |2        |1554     |
+X        |13-04    |0D04H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D04     |2        |1554     |
+X        |13-05    |0D05H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D05     |2        |1554     |
+X        |13-06    |0D06H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D06     |2        |1554     |
+X        |13-07    |0D07H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D07     |2        |1554     |
+X        |13-08    |0D08H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D08     |2        |1554     |
+X        |13-09    |0D09H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D09     |2        |1554     |
+X        |13-10    |0D0AH    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D0A     |2        |1554     |
+X        |13-11    |0D0BH    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D0B     |2        |1554     |
+X        |13-12    |0D0CH    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D0C     |2        |1554     |
+X        |13-13    |0D0DH    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D0D     |2        |1554     |
+X        |13-14    |0D0EH    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D0E     |2        |1554     |
+X        |13-15    |0D0FH    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D0F     |2        |1554     |
+X        |13-16    |0D10H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D10     |2        |1554     |
+X        |13-17    |0D11H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D11     |2        |1554     |
+X        |13-18    |0D12H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D12     |2        |1554     |
+X        |13-19    |0D13H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D13     |2        |1554     |
+X        |13-20    |0D14H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D14     |2        |1554     |
+X        |13-21    |0D15H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D15     |2        |1554     |
+X        |13-22    |0D16H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D16     |2        |1554     |
+X        |13-23    |0D17H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D17     |2        |1554     |
+X        |13-24    |0D18H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D18     |2        |1554     |
+X        |13-25    |0D19H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D19     |2        |1554     |
+X        |13-26    |0D1AH    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D1A     |2        |1554     |
+X        |13-27    |0D1BH    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D1B     |2        |1554     |
+X        |13-28    |0D1CH    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D1C     |2        |1554     |
+X        |13-29    |0D1DH    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D1D     |2        |1554     |
+X        |13-30    |0D1EH    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D1E     |2        |1554     |
+X        |13-31    |0D1FH    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D1F     |2        |1554     |
+X        |13-32    |0D20H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D20     |2        |1554     |
+X        |13-33    |0D21H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D21     |2        |1554     |
+X        |13-34    |0D22H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D22     |2        |1554     |
+X        |13-35    |0D23H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D23     |2        |1554     |
+X        |13-36    |0D24H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D24     |2        |1554     |
+X        |13-37    |0D25H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D25     |2        |1554     |
+X        |13-38    |0D26H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D26     |2        |1554     |
+X        |13-39    |0D27H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D27     |2        |1554     |
+X        |13-40    |0D28H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D28     |2        |1554     |
+X        |13-41    |0D29H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D29     |2        |1554     |
+X        |13-42    |0D2AH    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D2A     |2        |1554     |
+X        |13-43    |0D2BH    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D2B     |2        |1554     |
+X        |13-44    |0D2CH    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D2C     |2        |1554     |
+X        |13-45    |0D2DH    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D2D     |2        |1554     |
+X        |13-46    |0D2EH    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D2E     |2        |1554     |
+X        |13-47    |0D2FH    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D2F     |2        |1554     |
+X        |13-48    |0D30H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D30     |2        |1554     |
+X        |13-49    |0D31H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D31     |2        |1554     |
+X        |13-50    |0D32H    |Reserved         |####     |0.00     |0.00     |0.00     |14.99    |Writable |0D32     |2        |1554     |
+X        |13-51    |0D33H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D33     |0        |32776    |
+X        |13-52    |0D34H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D34     |0        |32776    |
+X        |13-53    |0D35H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D35     |0        |32776    |
+X        |13-54    |0D36H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D36     |0        |32776    |
+X        |13-55    |0D37H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D37     |0        |32776    |
+X        |13-56    |0D38H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D38     |0        |32776    |
+X        |13-57    |0D39H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D39     |0        |32776    |
+X        |13-58    |0D3AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D3A     |0        |32776    |
+X        |13-59    |0D3BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D3B     |0        |32776    |
+X        |13-60    |0D3CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D3C     |0        |32776    |
+X        |13-61    |0D3DH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D3D     |0        |32776    |
+X        |13-62    |0D3EH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D3E     |0        |32776    |
+X        |13-63    |0D3FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D3F     |0        |32776    |
+X        |13-64    |0D40H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D40     |0        |32776    |
+X        |13-65    |0D41H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D41     |0        |32776    |
+X        |13-66    |0D42H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D42     |0        |32776    |
+X        |13-67    |0D43H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D43     |0        |32776    |
+X        |13-68    |0D44H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D44     |0        |32776    |
+X        |13-69    |0D45H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D45     |0        |32776    |
+X        |13-70    |0D46H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D46     |0        |32776    |
+X        |13-71    |0D47H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D47     |0        |32776    |
+X        |13-72    |0D48H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D48     |0        |32776    |
+X        |13-73    |0D49H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D49     |0        |32776    |
+X        |13-74    |0D4AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D4A     |0        |32776    |
+X        |13-75    |0D4BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D4B     |0        |32776    |
+X        |13-76    |0D4CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D4C     |0        |32776    |
+X        |13-77    |0D4DH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D4D     |0        |32776    |
+X        |13-78    |0D4EH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D4E     |0        |32776    |
+X        |13-79    |0D4FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D4F     |0        |32776    |
+X        |13-80    |0D50H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D50     |0        |32776    |
+X        |13-81    |0D51H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D51     |0        |32776    |
+X        |13-82    |0D52H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D52     |0        |32776    |
+X        |13-83    |0D53H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D53     |0        |32776    |
+X        |13-84    |0D54H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D54     |0        |32776    |
+X        |13-85    |0D55H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D55     |0        |32776    |
+X        |13-86    |0D56H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D56     |0        |32776    |
+X        |13-87    |0D57H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D57     |0        |32776    |
+X        |13-88    |0D58H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D58     |0        |32776    |
+X        |13-89    |0D59H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D59     |0        |32776    |
+X        |13-90    |0D5AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D5A     |0        |32776    |
+X        |13-91    |0D5BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D5B     |0        |32776    |
+X        |13-92    |0D5CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D5C     |0        |32776    |
+X        |13-93    |0D5DH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D5D     |0        |32776    |
+X        |13-94    |0D5EH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D5E     |0        |32776    |
+X        |13-95    |0D5FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D5F     |0        |32776    |
+X        |13-96    |0D60H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D60     |0        |32776    |
+X        |13-97    |0D61H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D61     |0        |32776    |
+X        |13-98    |0D62H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D62     |0        |32776    |
+X        |13-99    |0D63H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0D63     |0        |32776    |
+X        |*****    |*****    |14 - OPTION CARD |*****    |*****    |*****    |*****    |*****    |*****    |*****    |*****    |         |
+X        |14-00    |0E00H    |AI1 Op.Card Func |####     |0        |0        |0        |13       |Writable |0E00     |0        |9232     |
+X        |14-01    |0E01H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E01     |0        |32776    |
+X        |14-02    |0E02H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E02     |0        |32776    |
+X        |14-03    |0E03H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E03     |0        |32776    |
+X        |14-04    |0E04H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E04     |0        |32776    |
+X        |14-05    |0E05H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E05     |0        |32776    |
+X        |14-06    |0E06H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E06     |0        |32776    |
+X        |14-07    |0E07H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E07     |0        |32776    |
+X        |14-08    |0E08H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E08     |0        |32776    |
+X        |14-09    |0E09H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E09     |0        |32776    |
+X        |14-10    |0E0AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E0A     |0        |32776    |
+X        |14-11    |0E0BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E0B     |0        |32776    |
+X        |14-12    |0E0CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E0C     |0        |32776    |
+X        |14-13    |0E0DH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E0D     |0        |32776    |
+X        |14-14    |0E0EH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E0E     |0        |32776    |
+X        |14-15    |0E0FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E0F     |0        |32776    |
+X        |14-16    |0E10H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E10     |0        |32776    |
+X        |14-17    |0E11H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E11     |0        |32776    |
+X        |14-18    |0E12H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E12     |0        |32776    |
+X        |14-19    |0E13H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E13     |0        |32776    |
+X        |14-20    |0E14H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E14     |0        |32776    |
+X        |14-21    |0E15H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E15     |0        |32776    |
+X        |14-22    |0E16H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E16     |0        |32776    |
+X        |14-23    |0E17H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E17     |0        |32776    |
+X        |14-24    |0E18H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E18     |0        |32776    |
+X        |14-25    |0E19H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E19     |0        |32776    |
+X        |14-26    |0E1AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E1A     |0        |32776    |
+X        |14-27    |0E1BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E1B     |0        |32776    |
+X        |14-28    |0E1CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E1C     |0        |32776    |
+X        |14-29    |0E1DH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E1D     |0        |32776    |
+X        |14-30    |0E1EH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E1E     |0        |32776    |
+X        |14-31    |0E1FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E1F     |0        |32776    |
+X        |14-32    |0E20H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E20     |0        |32776    |
+X        |14-33    |0E21H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E21     |0        |32776    |
+X        |14-34    |0E22H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E22     |0        |32776    |
+X        |14-35    |0E23H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E23     |0        |32776    |
+X        |14-36    |0E24H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E24     |0        |32776    |
+X        |14-37    |0E25H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E25     |0        |32776    |
+X        |14-38    |0E26H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E26     |0        |32776    |
+X        |14-39    |0E27H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E27     |0        |32776    |
+X        |14-40    |0E28H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E28     |0        |32776    |
+X        |14-41    |0E29H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E29     |0        |32776    |
+X        |14-42    |0E2AH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E2A     |0        |32776    |
+X        |14-43    |0E2BH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E2B     |0        |32776    |
+X        |14-44    |0E2CH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E2C     |0        |32776    |
+X        |14-45    |0E2DH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E2D     |0        |32776    |
+X        |14-46    |0E2EH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E2E     |0        |32776    |
+X        |14-47    |0E2FH    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E2F     |0        |32776    |
+X        |14-48    |0E30H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E30     |0        |32776    |
+X        |14-49    |0E31H    |Reserved         |####     |0        |0        |0        |65535    |Read-Only|0E31     |0        |32776    |
+X        |14-50    |0E32H    |Out FREQ REC 2   |Hz       |85.81    |0.00     |0.00     |599.00   |Read-Only|0E32     |2        |520      |
+X        |14-51    |0E33H    |DCBus Value REC2 |Vdc      |670.5    |0.0      |0.0      |6553.5   |Read-Only|0E33     |1        |264      |
+X        |14-52    |0E34H    |Isum Value REC 2 |Amps     |7.37     |0.00     |0.00     |655.35   |Read-Only|0E34     |2        |520      |
+X        |14-53    |0E35H    |IGBT Temp  REC 2 |oC       |42.6     |0.0      |-3276.7  |3276.7   |Read-Only|0E35     |1        |392      |
+X        |14-54    |0E36H    |Out FREQ REC 3   |Hz       |281.50   |0.00     |0.00     |599.00   |Read-Only|0E36     |2        |520      |
+X        |14-55    |0E37H    |DCBus Value REC3 |Vdc      |667.8    |0.0      |0.0      |6553.5   |Read-Only|0E37     |1        |264      |
+X        |14-56    |0E38H    |Isum Value REC 3 |Amps     |7.70     |0.00     |0.00     |655.35   |Read-Only|0E38     |2        |520      |
+X        |14-57    |0E39H    |IGBT Temp  REC 3 |oC       |45.6     |0.0      |-3276.7  |3276.7   |Read-Only|0E39     |1        |392      |
+X        |14-58    |0E3AH    |Out FREQ REC 4   |Hz       |0.00     |0.00     |0.00     |599.00   |Read-Only|0E3A     |2        |520      |
+X        |14-59    |0E3BH    |DCBus Value REC4 |Vdc      |669.5    |0.0      |0.0      |6553.5   |Read-Only|0E3B     |1        |264      |
+X        |14-60    |0E3CH    |Isum Value REC 4 |Amps     |0.00     |0.00     |0.00     |655.35   |Read-Only|0E3C     |2        |520      |
+X        |14-61    |0E3DH    |IGBT Temp  REC 4 |oC       |24.7     |0.0      |-3276.7  |3276.7   |Read-Only|0E3D     |1        |392      |
+X        |14-62    |0E3EH    |Out FREQ REC 5   |Hz       |12.34    |0.00     |0.00     |599.00   |Read-Only|0E3E     |2        |520      |
+X        |14-63    |0E3FH    |DCBus Value REC5 |Vdc      |670.7    |0.0      |0.0      |6553.5   |Read-Only|0E3F     |1        |264      |
+X        |14-64    |0E40H    |Isum Value REC 5 |Amps     |2.40     |0.00     |0.00     |655.35   |Read-Only|0E40     |2        |520      |
+X        |14-65    |0E41H    |IGBT Temp  REC 5 |oC       |24.5     |0.0      |-3276.7  |3276.7   |Read-Only|0E41     |1        |392      |
+X        |14-66    |0E42H    |Out FREQ REC 6   |Hz       |7.22     |0.00     |0.00     |599.00   |Read-Only|0E42     |2        |520      |
+X        |14-67    |0E43H    |DCBus Value REC6 |Vdc      |652.9    |0.0      |0.0      |6553.5   |Read-Only|0E43     |1        |264      |
+X        |14-68    |0E44H    |Isum Value REC 6 |Amps     |19.80    |0.00     |0.00     |655.35   |Read-Only|0E44     |2        |520      |
+X        |14-69    |0E45H    |IGBT Temp  REC 6 |oC       |37.6     |0.0      |-3276.7  |3276.7   |Read-Only|0E45     |1        |392      |
+X        |14-70    |0E46H    |7th Fault Record |####     |0        |0        |0        |65535    |Read-Only|0E46     |0        |8200     |
+X        |14-71    |0E47H    |8th Fault Record |####     |0        |0        |0        |65535    |Read-Only|0E47     |0        |8200     |
+X        |14-72    |0E48H    |9th Fault Record |####     |0        |0        |0        |65535    |Read-Only|0E48     |0        |8200     |
+X        |14-73    |0E49H    |10th FaultRecord |####     |0        |0        |0        |65535    |Read-Only|0E49     |0        |8200     |
+X        |14-74    |0E4AH    |Over TQC3 Method |####     |0        |0        |0        |4        |Writable |0E4A     |0        |8210     |
+X        |14-75    |0E4BH    |Over TQC3 Level  |%        |120      |120      |10       |250      |Writable |0E4B     |0        |18       |
+X        |14-76    |0E4CH    |Over TQC3 Time   |sec      |0.1      |0.1      |0.1      |60.0     |Writable |0E4C     |1        |274      |
+X        |14-77    |0E4DH    |Over TQC4 Method |####     |0        |0        |0        |4        |Writable |0E4D     |0        |8210     |
+X        |14-78    |0E4EH    |Over TQC4 Level  |%        |120      |120      |10       |250      |Writable |0E4E     |0        |18       |
+X        |14-79    |0E4FH    |Over TQC4 Time   |sec      |0.1      |0.1      |0.1      |60.0     |Writable |0E4F     |1        |274      |
+X        |14-80    |0E50H    |Thermal RLY3 SEL |####     |2        |2        |0        |2        |Writable |0E50     |0        |8210     |
+X        |14-81    |0E51H    |Thermal RLY3 T   |sec      |60.0     |60.0     |30.0     |600.0    |Writable |0E51     |1        |274      |
+X        |14-82    |0E52H    |Thermal RLY4 SEL |####     |2        |2        |0        |2        |Writable |0E52     |0        |8210     |
+X        |14-83    |0E53H    |Thermal RLY4 T   |sec      |60.0     |60.0     |30.0     |600.0    |Writable |0E53     |1        |274      |
